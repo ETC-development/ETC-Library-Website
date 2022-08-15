@@ -1,3 +1,5 @@
+import NavBar from "./components/NavBar/NavBar.index"
+
 interface AppProps {
   
 }
@@ -5,7 +7,7 @@ interface AppProps {
 const App: React.FunctionComponent<AppProps> = () => {
   return ( 
     <div>
-      
+      <NavBar/> 
     </div>
    );
 }
