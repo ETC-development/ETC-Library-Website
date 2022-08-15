@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  mode: 'jit',
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
@@ -13,8 +14,13 @@ module.exports = {
       'light-text': '#F6F9F6',
       'dark-text': '#0C1F47',
       'secondary': '#F37D00',
+      'violet': '#9FADFD'
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        'sans' : ['Montserrat', '"Open Sans"']
+      }
+    },
   },
   plugins: [],
 }
