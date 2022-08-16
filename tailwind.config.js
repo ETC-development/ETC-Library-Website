@@ -18,7 +18,11 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        'sans' : ['Montserrat', '"Open Sans"']
+        'sans' : ['Montserrat', '"Open Sans"'],
+        'cursive': ['Kalam', 'cursive']
+      },
+      width: {
+        "100": "32rem"
       }
     },
   },
