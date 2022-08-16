@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* remove it if we change the @media */
+.cardContentS1 , .cardContentS2
+{
+    height: 80%;
+    width: 45%;
+}
+@media (max-width: 650px) {
+
+    .cardMainContent
+    {
+        flex-direction: column;
+    }
+    .cardContentS1 , .cardContentS2
+{
+    height: 45%;
+    width: 80%;
+}
+ 
+}
