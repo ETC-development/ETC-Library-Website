@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="475514c4-872f-4531-a62f-ee7fa806c055" name="Changes" comment="Add WebStorm config files" />
+    <list default="true" id="475514c4-872f-4531-a62f-ee7fa806c055" name="Changes" comment="Add WebStorm config files">
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.index.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,7 +37,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "yarn",
     "prettierjs.PrettierConfiguration.Package": "/home/salah/programming/web/ETC-Library-Website/node_modules/prettier",
-    "settings.editor.selected.configurable": "preferences.intentionPowerPack",
+    "settings.editor.selected.configurable": "preferences.sourceCode.JavaScript",
     "ts.external.directory.path": "/home/salah/programming/web/ETC-Library-Website/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }

@@ -21,8 +21,10 @@ import Contribution from "./Contribution";
 
 const Footer: React.FunctionComponent = () => {
     return (
-        <div className="w-full absolute bottom-0 font-sans text-light-text">
-            <Wave />
+        <div className="w-full font-sans text-light-text">
+            <div className={"rotate-180"}>
+                <Wave />
+            </div>
             <div className="w-full bg-dark-bg flex flex-col justify-center text-center items-center py-2 ">
                 <h1 className="text-3xl lg:text-4xl text-light-text tracking-widest font-semibold">
                     Contribute

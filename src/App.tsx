@@ -1,21 +1,18 @@
-
-import React from 'react';
-import Navbar from "./components/NavBar/index";
+import Hero from "./components/Hero/Hero.index";
+import Main from "./components/Main/Main.index";
 import Footer from "./components/Footer/Footer.index";
 
-
 interface AppProps {
-  
 }
 
- 
 const App: React.FunctionComponent<AppProps> = () => {
-  return ( 
+  return (
     <div>
-      {/* <NavBar /> */}
-      <Footer />
+      <Hero />
+      <Main />
+      <Footer/>
     </div>
-   );
-}
- 
+  );
+};
+
 export default App;

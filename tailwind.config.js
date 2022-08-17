@@ -14,7 +14,8 @@ module.exports = {
       'light-text': '#F6F9F6',
       'dark-text': '#0C1F47',
       'secondary': '#F37D00',
-      'violet': '#9FADFD'
+      'violet': '#9FADFD',
+      'grey-stroke': '#C2C2C2'
     },
     extend: {
       fontFamily: {
@@ -22,7 +23,8 @@ module.exports = {
         'cursive': ['Kalam', 'cursive']
       },
       width: {
-        "100": "32rem"
+        "100": "32rem",
+        "200": "70rem"
       }
     },
   },
