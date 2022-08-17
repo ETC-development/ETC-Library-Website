@@ -1,7 +1,9 @@
-const Main: React.FunctionComponent = () => {
-    return ( <div>
+const Main = () => {
+  return (
+    <div>
 
-    </div> );
+    </div>
+  )
 }
- 
+
 export default Main;

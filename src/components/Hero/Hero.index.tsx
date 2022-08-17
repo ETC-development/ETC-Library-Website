@@ -1,7 +1,9 @@
-const Hero: React.FunctionComponent = () => {
-    return ( <div>
+const Hero = () => {
+  return (
+    <div>
 
-    </div> );
+    </div>
+  )
 }
- 
+
 export default Hero;
