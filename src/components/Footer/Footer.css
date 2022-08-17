@@ -1,4 +1,7 @@
+.social-icon {
+    @apply mx-2;
+}
 
-a:not(.last){
-    margin-right: 15px;
+.social-icon * {
+    @apply text-3xl text-violet;
 }

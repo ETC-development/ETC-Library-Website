@@ -1,10 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  mode: 'jit',
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
@@ -14,10 +14,17 @@ module.exports = {
       'light-text': '#F6F9F6',
       'dark-text': '#0C1F47',
       'secondary': '#F37D00',
-      'violet': '#9FADFD',
-      'grey-text': '#C2C2C2',
+      'violet': '#9FADFD'
     },
-    extend: {} ,
+    extend: {
+      fontFamily: {
+        'sans' : ['Montserrat', '"Open Sans"'],
+        'cursive': ['Kalam', 'cursive']
+      },
+      width: {
+        "100": "32rem"
+      }
+    },
   },
   plugins: [],
 }
