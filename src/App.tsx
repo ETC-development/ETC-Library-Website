@@ -1,6 +1,5 @@
 
-import React from 'react';
-import Navbar from "./components/NavBar/index";
+import NavBar from "components/NavBar/NavBar.index";
 import Footer from "./components/Footer/Footer.index";
 
 
@@ -12,8 +11,8 @@ interface AppProps {
 const App: React.FunctionComponent<AppProps> = () => {
   return ( 
     <div>
-      {/* <NavBar /> */}
-      <Footer />
+      <NavBar />
+      {/* <Footer/> */}
     </div>
    );
 }

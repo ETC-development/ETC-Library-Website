@@ -1,0 +1,49 @@
+.bar{
+    height: 5px;
+    width: 37px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+ul{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .4s , opacity .5s linear;
+} 
+
+ul.visible{
+    visibility: visible;
+    opacity: 1;
+}
+
+li:hover .element{
+    transform: translateX(20px);
+    letter-spacing: .2rem;
+    color: #F37D00;
+}
+
+.element{ 
+    font-size: 1.2rem;
+    transition: .5s ease ;
+    transition-property: transform letter-spacing color;
+}
+
+@media screen and (min-width: 768px){
+    ul{
+        visibility: visible;
+        opacity: 1;
+        transition: none;
+    } 
+
+    li:hover .element{
+        transform: none;
+        letter-spacing: initial;
+    }
+    
+    .element{ 
+        font-size: 1.1rem;
+        transition: .5s ease ;
+        transition-property: transform letter-spacing color;
+    }
+    
+}
