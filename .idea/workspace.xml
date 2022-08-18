@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="475514c4-872f-4531-a62f-ee7fa806c055" name="Changes" comment="Add WebStorm config files">
+    <list default="true" id="475514c4-872f-4531-a62f-ee7fa806c055" name="Changes" comment="Some adjustments and code formatting">
       <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Hero/Hero.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/Hero.index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/Main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/Main.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Main.index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +199,21 @@
       <option name="project" value="LOCAL" />
       <updated>1660751972576</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Put Hero, Main and Footer together">
+      <created>1660765588455</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1660765588455</updated>
+    </task>
+    <task id="LOCAL-00021" summary="IDE files">
+      <created>1660765595665</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1660765595665</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,6 +248,9 @@
     <MESSAGE value="Minor style adjustments and corrections" />
     <MESSAGE value="Add prettier" />
     <MESSAGE value="Add WebStorm config files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add WebStorm config files" />
+    <MESSAGE value="Put Hero, Main and Footer together" />
+    <MESSAGE value="IDE files" />
+    <MESSAGE value="Some adjustments and code formatting" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some adjustments and code formatting" />
   </component>
 </project>

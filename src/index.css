@@ -8,6 +8,7 @@
 
 body, html {
     height: 100%;
+    scroll-behavior: smooth;
     @apply bg-light-bg;
 }
 
@@ -20,3 +21,5 @@ body, html {
     margin: 0;
     padding: 0;
 }
+
+
