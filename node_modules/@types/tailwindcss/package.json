@@ -1,0 +1,12 @@
+{
+    "name": "@types/tailwindcss",
+    "version": "3.1.0",
+    "description": "Stub TypeScript definitions entry for tailwindcss, which provides its own types definitions",
+    "main": "",
+    "scripts": {},
+    "license": "MIT",
+    "dependencies": {
+        "tailwindcss": "*"
+    },
+    "deprecated": "This is a stub types definition. tailwindcss provides its own type definitions, so you do not need this installed."
+}
