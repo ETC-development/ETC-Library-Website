@@ -16,8 +16,8 @@ export default function Aside() {
       </button>
       <div
         id="side-menu"
-        className={`md:hidden fixed pt-20 top-0 right-0 w-3/5 p-6 bg-dark-bg shadow-[0_0_4px_4px_rgba(0,0,0,.2)] ${
-          isOpen ? "-translate-y-0" : "-translate-y-full"
+        className={`md:hidden fixed pt-20 top-0 right-0 w-3/5 p-6 bg-dark-bg ${
+          isOpen ? "-translate-y-0 shadow-[0_0_4px_4px_rgba(0,0,0,.2)]" : "-translate-y-full"
         } ease-in-out duration-300`}
       >
         <ul className={`items-center text-white flex flex-col`}>
