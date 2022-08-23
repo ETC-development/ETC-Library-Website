@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-nav li:last-child {
-    @apply font-bold border-2 border-solid rounded-md border-secondary p-2;
+#main-menu li:last-child {
+    @apply font-bold border-2 border-solid rounded-md border-secondary p-2 hover:bg-secondary;
 }

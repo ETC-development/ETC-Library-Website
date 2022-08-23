@@ -1,15 +1,15 @@
-import NavBar from "./components/NavBar/NavBar.index"
+import NavBar from "./components/NavBar/NavBar.index";
+import Aside from "./components/Aside/Aside.index";
 
-interface AppProps {
-  
-}
- 
+interface AppProps {}
+
 const App: React.FunctionComponent<AppProps> = () => {
-  return ( 
+  return (
     <div>
-      <NavBar/> 
+      <NavBar /> 
+      <Aside/>
     </div>
-   );
-}
- 
+  );
+};
+
 export default App;

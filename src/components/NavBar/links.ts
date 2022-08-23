@@ -1,7 +1,7 @@
 let links = [
     {
         "label": "Home",
-        "link": "/"
+        "link": "#"
     },
     {
         "label": "1PC",
