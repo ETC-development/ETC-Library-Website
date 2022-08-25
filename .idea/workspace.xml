@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="475514c4-872f-4531-a62f-ee7fa806c055" name="Changes" comment="Some adjustments and code formatting">
+    <list default="true" id="475514c4-872f-4531-a62f-ee7fa806c055" name="Changes" comment="use spacing instead of width, to make it usable with everything">
+      <change afterPath="$PROJECT_DIR$/src/components/Main/Search/FilterBar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Main/Search/ResultsMenu.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Main/Search/Search.index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Main/Search/SearchBar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Main/Search/utils/CardFilterTag.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Main/Search/utils/DocumentCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Main/Search/utils/FilterDropdown.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Hero/Hero.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/Hero.index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/Main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Main/Main.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Main.index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/SemesterCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/SemesterCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/interfaces.index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/interfaces.index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/modules.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/modules.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +48,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "yarn",
     "prettierjs.PrettierConfiguration.Package": "/home/salah/programming/web/ETC-Library-Website/node_modules/prettier",
-    "settings.editor.selected.configurable": "preferences.sourceCode.JavaScript",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
     "ts.external.directory.path": "/home/salah/programming/web/ETC-Library-Website/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -65,6 +73,9 @@
       <workItem from="1660605873440" duration="3754000" />
       <workItem from="1660654188278" duration="27340000" />
       <workItem from="1660733864636" duration="12071000" />
+      <workItem from="1660830375335" duration="52000" />
+      <workItem from="1661430036967" duration="10586000" />
+      <workItem from="1661441226871" duration="23157000" />
     </task>
     <task id="LOCAL-00001" summary="enable absolute path import">
       <created>1660580584077</created>
@@ -213,7 +224,28 @@
       <option name="project" value="LOCAL" />
       <updated>1660765595665</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Some adjustments and code formatting">
+      <created>1660781420829</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1660781420829</updated>
+    </task>
+    <task id="LOCAL-00023" summary="remove duplicate classes">
+      <created>1661430065496</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1661430065496</updated>
+    </task>
+    <task id="LOCAL-00024" summary="use spacing instead of width, to make it usable with everything">
+      <created>1661441651287</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1661441651287</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,6 +283,8 @@
     <MESSAGE value="Put Hero, Main and Footer together" />
     <MESSAGE value="IDE files" />
     <MESSAGE value="Some adjustments and code formatting" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some adjustments and code formatting" />
+    <MESSAGE value="remove duplicate classes" />
+    <MESSAGE value="use spacing instead of width, to make it usable with everything" />
+    <option name="LAST_COMMIT_MESSAGE" value="use spacing instead of width, to make it usable with everything" />
   </component>
 </project>
