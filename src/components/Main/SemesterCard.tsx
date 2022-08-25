@@ -13,7 +13,7 @@ const SemesterCard: React.FunctionComponent<SemesterCardProps> = ({semester}) =>
 
             <div className="cardContentButtom p-6 flex flex-col">
                 {
-                    semester.modules.map(m => <li className="module"><a href={m.url}>{m.name}</a></li>)
+                    semester.modules.map(m => <li key={m.dropdownValue} className="module"><a href={m.url}>{m.name}</a></li>)
                 }
             </div>
         </div>
