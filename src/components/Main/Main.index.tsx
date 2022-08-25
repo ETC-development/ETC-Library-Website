@@ -13,7 +13,7 @@ const Main: React.FunctionComponent = () => {
                                 <h2 className=" text-xl text-light-text ">{card.title}</h2>
                             </div>
 
-                            <div className="cardMainContent w-full py-8 px-3 text-dark-text shadow-xl w-full flex flex-wrap gap-4 justify-around items-center rounded-b-xl bg-white ">
+                            <div className="cardMainContent w-full py-8 px-3 text-dark-text shadow-xl flex flex-wrap gap-4 justify-around items-center rounded-b-xl bg-white ">
                                 {card.semesters.map((semester) => {
                                     return <SemesterCard semester={semester} />;
                                 })}
