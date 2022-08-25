@@ -22,7 +22,7 @@ module.exports = {
         'sans' : ['Montserrat', '"Open Sans"'],
         'cursive': ['Kalam', 'cursive']
       },
-      width: {
+      spacing: {
         "100": "32rem",
         "200": "70rem"
       }
