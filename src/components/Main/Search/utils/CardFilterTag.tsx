@@ -6,7 +6,7 @@ interface FilterTagProps {
 
 const CardFilterTag: FunctionComponent<FilterTagProps> = ({text}) => {
     return (
-        <div className={"border-2 border-violet rounded-3xl px-2 py-1 text-[10px] md:text-[12px] text-violet font-semibold"}>
+        <div className={"border border-violet rounded-3xl px-2 py-1 text-[10px] md:text-[13px] text-violet font-medium"}>
             {text}
         </div>
     )

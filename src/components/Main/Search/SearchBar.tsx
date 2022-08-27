@@ -13,7 +13,7 @@ const SearchBar: FunctionComponent<SearchBarProps> = ({query, onInputChange, onF
     return (
         <form
             onSubmit={(e) => e.preventDefault()}
-            className="focus-within:shadow-md border-grey-stroke border w-full min-w-max m-auto bg-white rounded-2xl flex items-center justify-around h-12 px-1 text-violet font-sans lg:w-200 max-w-full"
+            className="shadow-md w-full min-w-max m-auto bg-white rounded-2xl flex items-center justify-around h-12 px-1 text-violet font-sans lg:w-200 max-w-full"
         >
             <div className="px-3">
                 <FontAwesomeIcon icon={faSearch}  />

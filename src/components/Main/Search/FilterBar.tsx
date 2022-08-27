@@ -102,7 +102,7 @@ const FilterBar: FunctionComponent<FilterBarProps> = ({docType,level,module, set
     return (
         <div
             className={
-                "w-full lg:w-200 py-2 px-5 bg-white border rounded-xl text-dark-text border-grey-stroke"
+                "w-full lg:w-200 py-2 px-5 bg-white shadow-md rounded-xl text-dark-text"
             }
         >
             <div className={"flex md:items-center gap-2 "}>
