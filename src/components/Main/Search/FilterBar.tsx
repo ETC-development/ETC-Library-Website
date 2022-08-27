@@ -1,6 +1,7 @@
 import FilterDropdown from "./utils/FilterDropdown";
-import { Dispatch, FunctionComponent, SetStateAction, useState } from "react";
+import { Dispatch, FunctionComponent, SetStateAction, useState, memo } from "react";
 import { FilterDropdownProps } from "interfaces/interfaces.index";
+import { AnimatePresence, motion } from "framer-motion";
 
 import modulesArr from "utils/modules";
 
@@ -8,12 +9,19 @@ interface FilterBarProps {
     level: string;
     module: string;
     docType: string;
-    setLevel: Dispatch<SetStateAction<any>>
-    setModule: Dispatch<SetStateAction<any>>
-    setDocType: Dispatch<SetStateAction<any>>
+    setLevel: Dispatch<SetStateAction<any>>;
+    setModule: Dispatch<SetStateAction<any>>;
+    setDocType: Dispatch<SetStateAction<any>>;
 }
 
-const FilterBar: FunctionComponent<FilterBarProps> = ({docType,level,module, setModule, setDocType, setLevel}) => {
+const FilterBar: FunctionComponent<FilterBarProps> = memo(({
+    docType,
+    level,
+    module,
+    setModule,
+    setDocType,
+    setLevel,
+}) => {
     // a function that loops over the indexedModules array and returns an array of type: FilterDropdownProps["selections"]
     const getLevelsArr = (): FilterDropdownProps["selections"] => {
         return modulesArr.map((year) => {
@@ -91,7 +99,6 @@ const FilterBar: FunctionComponent<FilterBarProps> = ({docType,level,module, set
         }
     };
 
-
     //states for the options of the select elements
     const [levels, setLevels] = useState<FilterDropdownProps["selections"]>(getLevelsArr);
 
@@ -100,36 +107,40 @@ const FilterBar: FunctionComponent<FilterBarProps> = ({docType,level,module, set
     const [docTypes, setDocTypes] = useState<FilterDropdownProps["selections"]>(getDocTypes);
 
     return (
-        <div
-            className={
-                "w-full lg:w-200 py-2 px-5 bg-white shadow-md rounded-xl text-dark-text"
-            }
-        >
-            <div className={"flex md:items-center gap-2 "}>
-                <div>Filters:</div>
-                <div className={"flex flex-col md:flex-row gap-2 w-full"}>
-                    <FilterDropdown
-                        value={level}
-                        onChange={onSelectionChange}
-                        type={"level"}
-                        selections={levels}
-                    />
-                    <FilterDropdown
-                        value={module}
-                        onChange={onSelectionChange}
-                        type={"module"}
-                        selections={modules}
-                    />
-                    <FilterDropdown
-                        value={docType}
-                        onChange={onSelectionChange}
-                        type={"type"}
-                        selections={docTypes}
-                    />
+        <AnimatePresence>
+            <motion.div
+                initial={{opacity: 0, scaleY: 0, y: -100}}
+                animate={{opacity: 1, scaleY: 1, y: 0}}
+                exit={{opacity:0, scaleY: 0}}
+                transition={{type: "tween"}}
+                className={"w-full my-2 lg:w-200 py-2 px-5 bg-white shadow-md rounded-xl text-dark-text"}
+            >
+                <div className={"flex md:items-center gap-2 "}>
+                    <div>Filters:</div>
+                    <div className={"flex flex-col md:flex-row gap-2 w-full"}>
+                        <FilterDropdown
+                            value={level}
+                            onChange={onSelectionChange}
+                            type={"level"}
+                            selections={levels}
+                        />
+                        <FilterDropdown
+                            value={module}
+                            onChange={onSelectionChange}
+                            type={"module"}
+                            selections={modules}
+                        />
+                        <FilterDropdown
+                            value={docType}
+                            onChange={onSelectionChange}
+                            type={"type"}
+                            selections={docTypes}
+                        />
+                    </div>
                 </div>
-            </div>
-        </div>
+            </motion.div>
+        </AnimatePresence>
     );
-};
+});
 
 export default FilterBar;

@@ -1,6 +1,7 @@
 import CardFilterTag from "./CardFilterTag";
 import { FunctionComponent } from "react";
 import { DocumentInfo } from "../../../../interfaces/interfaces.index";
+import { AnimatePresence, motion } from "framer-motion";
 
 interface DocumentCardProps {
     doc: DocumentInfo;
@@ -10,8 +11,11 @@ interface DocumentCardProps {
 
 const DocumentCard: FunctionComponent<DocumentCardProps> = ({ doc, index, totalResults }) => {
     return (
-        <>
-            <a
+        <AnimatePresence>
+            <motion.a
+                initial={{opacity: 0, y: -50}}
+                animate={{opacity: 1, y: 0}}
+                exit={{opacity:0, scaleY: 0}}
                 href={`https://drive.google.com/file/d/${doc.url}/view`}
                 target={"_blank"}
                 className={
@@ -37,8 +41,8 @@ const DocumentCard: FunctionComponent<DocumentCardProps> = ({ doc, index, totalR
                         <div className={"text-dark-text opacity-50"}>{`${index+1}/${totalResults}`}</div>
                     </div>
                 </div>
-            </a>
-        </>
+            </motion.a>
+        </AnimatePresence>
     );
 };
 
