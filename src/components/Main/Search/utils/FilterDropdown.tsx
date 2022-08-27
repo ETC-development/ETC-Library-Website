@@ -1,11 +1,18 @@
 import { FunctionComponent } from "react";
 import { FilterDropdownProps } from "interfaces/interfaces.index";
 
-const FilterDropdown: FunctionComponent<FilterDropdownProps> = ({ type, selections, onChange, value }) => {
+const FilterDropdown: FunctionComponent<FilterDropdownProps> = ({
+    type,
+    selections,
+    onChange,
+    value,
+}) => {
     return (
-        <div className={
-            "w-full flex justify-center items-center md:w-3/12 text-light-text  text-sm bg-dark-bg rounded-xl px-2"
-        }>
+        <div
+            className={
+                "w-full flex justify-center items-center md:w-3/12 text-light-text  text-sm bg-dark-bg rounded-xl px-2"
+            }
+        >
             <select
                 name={type}
                 onChange={(e) => onChange(e)}

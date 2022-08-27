@@ -13,9 +13,9 @@ const DocumentCard: FunctionComponent<DocumentCardProps> = ({ doc, index, totalR
     return (
         <AnimatePresence>
             <motion.a
-                initial={{opacity: 0, y: -50}}
-                animate={{opacity: 1, y: 0}}
-                exit={{opacity:0, scaleY: 0}}
+                initial={{ opacity: 0, y: -50 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, scaleY: 0 }}
                 href={`https://drive.google.com/file/d/${doc.url}/view`}
                 target={"_blank"}
                 className={
@@ -38,7 +38,9 @@ const DocumentCard: FunctionComponent<DocumentCardProps> = ({ doc, index, totalR
                             {/* we slice doc.type to remove last character which is an "s" of plural: exams => exam  */}
                             <CardFilterTag text={doc.type.slice(0, -1)} />
                         </div>
-                        <div className={"text-dark-text opacity-50"}>{`${index+1}/${totalResults}`}</div>
+                        <div className={"text-dark-text opacity-50"}>{`${
+                            index + 1
+                        }/${totalResults}`}</div>
                     </div>
                 </div>
             </motion.a>

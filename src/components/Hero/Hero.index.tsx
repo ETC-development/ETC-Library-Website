@@ -7,7 +7,7 @@ import { faAnglesUp } from "@fortawesome/free-solid-svg-icons";
 import quotes from "utils/quotes";
 import Wave from "utils/Wave";
 
-const Hero: React.FunctionComponent = () => {
+const Hero = () => {
     return (
         <div className="flex flex-col bg-dark-bg text-light-text font-sans">
             {/* Illustration + Paragraph */}
@@ -51,7 +51,13 @@ const Hero: React.FunctionComponent = () => {
 
                 {/* Illustration */}
                 <div className="my-6 flex flex-col w-full lg:w-100 justify-center content-center">
-                    <img className="m-auto w-96 lg:w-full" alt="hero illustration" src={HeroIllustration} />
+                    <img
+                        width={512}
+                        height={290}
+                        className="m-auto w-96 lg:w-full"
+                        alt="hero illustration"
+                        src={HeroIllustration}
+                    />
                     <div className={"text-center text-2xl p-4 font-cursive mt-6"}>
                         “{quotes[Math.floor(Math.random() * quotes.length)]}”
                     </div>
@@ -61,7 +67,10 @@ const Hero: React.FunctionComponent = () => {
             {/* Icon */}
             <div className={"text-center text-secondary p-2 mt-10"}>
                 <a className={"pt-6 px-1 lg:pt-10 lg:px-2"} href={"#main"}>
-                    <FontAwesomeIcon className={"text-3xl animate-bounce lg:text-5xl"} icon={faAnglesUp} />
+                    <FontAwesomeIcon
+                        className={"text-3xl animate-bounce lg:text-5xl"}
+                        icon={faAnglesUp}
+                    />
                 </a>
             </div>
 

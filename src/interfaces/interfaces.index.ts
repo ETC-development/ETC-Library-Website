@@ -1,4 +1,4 @@
-import { ChangeEvent, ChangeEventHandler } from "react";
+import { ChangeEventHandler } from "react";
 
 export interface Module {
     name: string;
@@ -18,17 +18,15 @@ export interface Year {
     semesters: Semester[];
 }
 
-
 export interface FilterDropdownProps {
-    type: string;  //default value/label
+    type: string; //default value/label
     selections: {
         label: string;
         value: string;
     }[];
-    onChange: ChangeEventHandler<HTMLSelectElement>
+    onChange: ChangeEventHandler<HTMLSelectElement>;
     value: string;
 }
-
 
 export interface SearchRequestQuery {
     name?: string;

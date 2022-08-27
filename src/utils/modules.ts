@@ -1,6 +1,5 @@
 import { Year } from "interfaces/interfaces.index";
 
-
 //TODO: reduce dimensionality of this
 const cardsInfo: Year[] = [
     {
@@ -13,12 +12,12 @@ const cardsInfo: Year[] = [
                     {
                         name: "Intensive English",
                         url: "",
-                        dropdownValue: "intensive english"
+                        dropdownValue: "intensive english",
                     },
                     {
                         name: "Critical Thinking and Creative Problem Solving (CPSCT)",
                         url: "",
-                        dropdownValue: "cpsct"
+                        dropdownValue: "cpsct",
                     },
                     {
                         name: "Analysis 1",
@@ -43,7 +42,7 @@ const cardsInfo: Year[] = [
                     {
                         name: "Analysis 2",
                         url: "",
-                        dropdownValue: "analysis 2"
+                        dropdownValue: "analysis 2",
                     },
                     {
                         name: "Introduction to Programming in C++",
@@ -53,22 +52,22 @@ const cardsInfo: Year[] = [
                     {
                         name: "Academic Communication 2",
                         url: "",
-                        dropdownValue: "academic communication 2"
+                        dropdownValue: "academic communication 2",
                     },
                     {
                         name: "Linear Algebra",
                         url: "",
-                        dropdownValue: "linear algebra"
+                        dropdownValue: "linear algebra",
                     },
                     {
                         name: "Probabilties and Statistics",
                         url: "",
-                        dropdownValue: "probabilities and statistics"
+                        dropdownValue: "probabilities and statistics",
                     },
                     {
                         name: "Object Oriented Programming",
                         url: "",
-                        dropdownValue: "Object Oriented Programming"
+                        dropdownValue: "Object Oriented Programming",
                     },
                 ],
             },
@@ -84,12 +83,12 @@ const cardsInfo: Year[] = [
                     {
                         name: "Intensive English",
                         url: "",
-                        dropdownValue: "a"
+                        dropdownValue: "a",
                     },
                     {
                         name: "Critical Thinking and Creative Problem Solving (CPSCT)",
                         url: "",
-                        dropdownValue: "b"
+                        dropdownValue: "b",
                     },
                     {
                         name: "Analysis 1",
@@ -114,7 +113,7 @@ const cardsInfo: Year[] = [
                     {
                         name: "Analysis 2",
                         url: "",
-                        dropdownValue: "f"
+                        dropdownValue: "f",
                     },
                     {
                         name: "Introduction to Programming in C++",
@@ -124,22 +123,22 @@ const cardsInfo: Year[] = [
                     {
                         name: "Academic Communication 2",
                         url: "",
-                        dropdownValue: "j"
+                        dropdownValue: "j",
                     },
                     {
                         name: "Linear Algebra",
                         url: "",
-                        dropdownValue: "k"
+                        dropdownValue: "k",
                     },
                     {
                         name: "Probabilties and Statistics",
                         url: "",
-                        dropdownValue: "l"
+                        dropdownValue: "l",
                     },
                     {
                         name: "Object Oriented Programming",
                         url: "",
-                        dropdownValue: "m"
+                        dropdownValue: "m",
                     },
                 ],
             },

@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="475514c4-872f-4531-a62f-ee7fa806c055" name="Changes" comment="use spacing instead of width, to make it usable with everything">
-      <change afterPath="$PROJECT_DIR$/src/components/Main/Search/FilterBar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Main/Search/ResultsMenu.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Main/Search/Search.index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Main/Search/SearchBar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Main/Search/utils/CardFilterTag.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Main/Search/utils/DocumentCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Main/Search/utils/FilterDropdown.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+    <list default="true" id="475514c4-872f-4531-a62f-ee7fa806c055" name="Changes" comment="add lodash and configure css minifying">
+      <change afterPath="$PROJECT_DIR$/src/assets/ETC Logo.avif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/ETC Logo.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/Main.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Main.index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/SemesterCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/SemesterCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces/interfaces.index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/interfaces.index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/modules.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/modules.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Hero/Hero.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/Hero.index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/Search/FilterBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Search/FilterBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/Search/ResultsMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Search/ResultsMenu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/Search/Search.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Search/Search.index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/Search/SearchBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Search/SearchBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/Search/utils/DocumentCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Search/utils/DocumentCard.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,29 +28,29 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2DOoxVyMvDNJoVQCiEcM9BDgL6V" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/salah/programming/web/ETC-Library-Website",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "prettierjs.PrettierConfiguration.Package": "/home/salah/programming/web/ETC-Library-Website/node_modules/prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "/home/salah/programming/web/ETC-Library-Website/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/salah/programming/web/ETC-Library-Website&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/home/salah/programming/web/ETC-Library-Website/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/salah/programming/web/ETC-Library-Website/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/assets" />
@@ -75,7 +73,10 @@
       <workItem from="1660733864636" duration="12071000" />
       <workItem from="1660830375335" duration="52000" />
       <workItem from="1661430036967" duration="10586000" />
-      <workItem from="1661441226871" duration="23157000" />
+      <workItem from="1661441226871" duration="24044000" />
+      <workItem from="1661470005808" duration="127000" />
+      <workItem from="1661520419286" duration="20403000" />
+      <workItem from="1661598853870" duration="9249000" />
     </task>
     <task id="LOCAL-00001" summary="enable absolute path import">
       <created>1660580584077</created>
@@ -245,7 +246,42 @@
       <option name="project" value="LOCAL" />
       <updated>1661441651287</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="provide key prop to list components">
+      <created>1661469135339</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1661469135339</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Add UI and basic functionality of Search">
+      <created>1661469183856</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1661469183856</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Add Search with keyword functionality">
+      <created>1661561225068</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1661561225068</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Convert @import to &lt;link&gt; for fonts">
+      <created>1661561252215</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1661561252215</updated>
+    </task>
+    <task id="LOCAL-00029" summary="add lodash and configure css minifying">
+      <created>1661561296951</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1661561296951</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,7 +300,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="enable absolute path import" />
     <MESSAGE value="added theme colors to tailwind config file" />
     <MESSAGE value="Hero component initial commit" />
     <MESSAGE value="Fixed Hero responsiveness on phone landscape orientation" />
@@ -285,6 +320,11 @@
     <MESSAGE value="Some adjustments and code formatting" />
     <MESSAGE value="remove duplicate classes" />
     <MESSAGE value="use spacing instead of width, to make it usable with everything" />
-    <option name="LAST_COMMIT_MESSAGE" value="use spacing instead of width, to make it usable with everything" />
+    <MESSAGE value="provide key prop to list components" />
+    <MESSAGE value="Add UI and basic functionality of Search" />
+    <MESSAGE value="Add Search with keyword functionality" />
+    <MESSAGE value="Convert @import to &lt;link&gt; for fonts" />
+    <MESSAGE value="add lodash and configure css minifying" />
+    <option name="LAST_COMMIT_MESSAGE" value="add lodash and configure css minifying" />
   </component>
 </project>
