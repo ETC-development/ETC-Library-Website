@@ -1,24 +1,27 @@
 import SearchBar from "./SearchBar";
-import { Dispatch, SetStateAction, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import ResultsMenu from "./ResultsMenu";
 import FilterBar from "./FilterBar";
-import { SearchRequestQuery, SearchResponse } from "interfaces/interfaces.index";
+import { FetchFunction, SearchRequestQuery, SearchResponse } from "interfaces/interfaces.index";
 import { debounce } from "lodash";
 
 const limit = 20;
 const delay = 200;
 const URL = "http://localhost:3001";
 
-interface FetchFunctionParams {
-    (
-        filters: SearchRequestQuery,
-        setResults: Dispatch<SetStateAction<SearchResponse>>,
-        setTotalResults: Dispatch<SetStateAction<number>>
-    ): void;
-}
+const fetchResults: FetchFunction = async (
+    filters,
+    setResults,
+    setLoading,
+    setError
+) => {
+    //to show loading spinner
+    setLoading(true);
 
-const fetchResults: FetchFunctionParams = async (filters, setResults) => {
-    const { name, page, limit, module, year, type } = filters;
+    //to hide error msg
+    setError("");
+
+    const { name = "", page, limit, module, year, type } = filters;
 
     const req: SearchRequestQuery = {
         name,
@@ -33,11 +36,21 @@ const fetchResults: FetchFunctionParams = async (filters, setResults) => {
         const res = await fetch(
             `${URL}/search/?name=${req.name}&type=${req.type}&module=${req.module}&year=${req.year}&page=${req.page}&limit=${req.limit}`
         );
-        if (res.ok) {
-            const data: SearchResponse = await res.json();
+
+        const data: SearchResponse = await res.json();
+        if (res.status === 200) {
             setResults(data);
+            setLoading(false); //to hide loading spinner
+            setError("");
+        } else if(res.status === 400) {
+            setLoading(false);
+            if (data.error) {
+                setError("We couldn't find any files with the provided information. Please try using filters to find what you're looking for");
+            }
         }
     } catch (e) {
+        setLoading(false);
+        setError("Unknown error has occurred !");
         console.log(e);
     }
 };
@@ -56,7 +69,12 @@ const Search = () => {
 
     //pagination state:
     const [page, setPage] = useState<number>(1);
-    const [totalResults, setTotalResults] = useState(0);
+
+    //loading state, will be true while fetching api
+    const [isLoading, setIsLoading] = useState(false);
+
+    //error state, to indicate error msg when search is done (for example "files not found")
+    const [errorMsg, setErrorMsg] = useState("");
 
     //state for search results
     const [results, setResults] = useState<SearchResponse>({
@@ -66,10 +84,10 @@ const Search = () => {
         currentPage: 1,
     });
 
+
     // calling fetch whenever searchQuery changes
     useEffect(() => {
-        if (!searchQuery) {
-            //if searchQuery is empty, we cancel the fetch
+        if (!(searchQuery || module || docType || level)) {
             debouncedFetch.cancel();
         } else {
             debouncedFetch(
@@ -82,13 +100,14 @@ const Search = () => {
                     name: searchQuery,
                 },
                 setResults,
-                setTotalResults
+                setIsLoading,
+                setErrorMsg
             );
         }
-    }, [searchQuery]);
+    }, [searchQuery, module, page, docType, level]);
 
     return (
-        <div className="px-2 w-full flex flex-col items-center">
+        <div className="px-2  w-full flex flex-col items-center">
             <h2 className={"p-3 my-2 text-[18px] text-center"}>
                 Find what you need faster and efficiently
             </h2>
@@ -112,7 +131,9 @@ const Search = () => {
                     setModule={setModule}
                 />
             )}
-            {results.files.length !== 0 && <ResultsMenu results={results} />}
+            {(errorMsg || results.files.length !== 0 ) && (
+                <ResultsMenu results={results} isLoading={isLoading} errorMsg={errorMsg} />
+            )}
         </div>
     );
 };

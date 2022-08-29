@@ -1,5 +1,11 @@
 import FilterDropdown from "./utils/FilterDropdown";
-import { Dispatch, FunctionComponent, memo, SetStateAction, useState } from "react";
+import {
+    Dispatch,
+    FunctionComponent,
+    memo,
+    SetStateAction, useEffect,
+    useState
+} from "react";
 import { FilterDropdownProps } from "interfaces/interfaces.index";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -14,75 +20,91 @@ interface FilterBarProps {
     setDocType: Dispatch<SetStateAction<any>>;
 }
 
+
+
+// TODO: MOVE THESE TO UTIL FUNCTIONS/FILES
+
+
+const levels: FilterDropdownProps["selections"] = modulesArr.map((year) => {
+    return {
+        label: year.title,
+        value: year.dropDownValue,
+    };
+});
+
+const docTypes: FilterDropdownProps["selections"] = [
+    {
+        value: "exams",
+        label: "Exams",
+    },
+    {
+        value: "tests",
+        label: "Tests",
+    },
+    {
+        value: "worksheets",
+        label: "Worksheets",
+    },
+    {
+        value: "courses",
+        label: "Courses",
+    },
+    {
+        value: "Resources",
+        label: "Resources",
+    },
+];
+
+/**
+ * A function that generates the list of modules based on the selected level
+ * @param {string?} level: level dropdown value ("1", "2", ... "5"), if it is not provided, the function will return all modules for all years
+ * @param {Dispatch<SetStateAction<any>>} setModule  State setter for module, we'll use it to set module filter selection to ""
+ * @returns {FilterDropdownProps["selections"]} Array of filters dropdown selections objects
+ * @see FilterDropdownProps
+ * */
+const getModulesFromLevel = (setModule: Dispatch<SetStateAction<any>>, level?: string ): FilterDropdownProps["selections"] => {
+    let output: FilterDropdownProps["selections"] = [];
+
+    // if level is provided, return only modules of that level
+    if (level) {
+        const index = +level - 1; //level can be: "1", "2" ... "5", so we subtract 1 to use it as index of array
+        modulesArr[index].semesters.forEach((semester) => {
+            semester.modules.forEach((module) => {
+                output.push({ label: module.name, value: module.dropdownValue });
+            });
+        });
+    } else {  //if level isn't provided, return all modules
+        modulesArr.forEach((year) => {
+            year.semesters.forEach((semester) => {
+                semester.modules.forEach((module) => {
+                    output.push({ label: module.name, value: module.dropdownValue });
+                });
+            });
+        });
+    }
+
+    // making the module state an empty string to prevent fetching with the old value before changing it
+    setModule("");
+
+    return output;
+};
+
+
+
+
+
+
 const FilterBar: FunctionComponent<FilterBarProps> = memo(
     ({ docType, level, module, setModule, setDocType, setLevel }) => {
-        // a function that loops over the indexedModules array and returns an array of type: FilterDropdownProps["selections"]
-        const getLevelsArr = (): FilterDropdownProps["selections"] => {
-            return modulesArr.map((year) => {
-                return {
-                    label: year.title,
-                    value: year.dropDownValue,
-                };
-            });
-        };
 
-        /**
-         * a function that loops over indexedModules array and returns an array of modules that are uder the specified level (year)
-         * @param {string} level: dropdown value of the level
-         * */
-        const getModulesFromLevel = (level?: string): FilterDropdownProps["selections"] => {
-            let output: FilterDropdownProps["selections"] = [];
-            if (level) {
-                const index = +level - 1; //level can be: "1", "2" ... "5", so we subtract 1 to use it as index of array
-                console.log(index);
 
-                modulesArr[index].semesters.forEach((semester) => {
-                    semester.modules.forEach((module) => {
-                        output.push({ label: module.name, value: module.dropdownValue });
-                    });
-                });
-            } else {
-                modulesArr.map((year) => {
-                    year.semesters.map((semester) => {
-                        semester.modules.forEach((module) => {
-                            output.push({ label: module.name, value: module.dropdownValue });
-                        });
-                    });
-                });
-            }
-            return output;
-        };
 
-        const getDocTypes = (): FilterDropdownProps["selections"] => {
-            return [
-                {
-                    value: "exams",
-                    label: "Exams",
-                },
-                {
-                    value: "tests",
-                    label: "Tests",
-                },
-                {
-                    value: "worksheets",
-                    label: "Worksheets",
-                },
-                {
-                    value: "courses",
-                    label: "Courses",
-                },
-                {
-                    value: "Resources",
-                    label: "Resources",
-                },
-            ];
-        };
 
-        const onSelectionChange: FilterDropdownProps["onChange"] = (e) => {
+        const onSelectionChange: FilterDropdownProps["onDropdownChange"] = (e) => {
             switch (e.target.name.toLowerCase()) {
                 case "level":
                     setLevel(e.target.value);
-                    setModules(getModulesFromLevel(e.target.value));
+                    setModules(getModulesFromLevel(setModule, e.target.value));
                     break;
                 case "module":
                     setModule(e.target.value);
@@ -93,13 +115,12 @@ const FilterBar: FunctionComponent<FilterBarProps> = memo(
             }
         };
 
-        //states for the options of the select elements
-        const [levels, setLevels] = useState<FilterDropdownProps["selections"]>(getLevelsArr);
+        const [modules, setModules] = useState<FilterDropdownProps["selections"]>([]);
 
-        const [modules, setModules] =
-            useState<FilterDropdownProps["selections"]>(getModulesFromLevel);
 
-        const [docTypes, setDocTypes] = useState<FilterDropdownProps["selections"]>(getDocTypes);
+        useEffect(()=> {
+            setModules(getModulesFromLevel(setModule))
+        }, [setModule])
 
         return (
             <AnimatePresence>
@@ -117,19 +138,19 @@ const FilterBar: FunctionComponent<FilterBarProps> = memo(
                         <div className={"flex flex-col md:flex-row gap-2 w-full"}>
                             <FilterDropdown
                                 value={level}
-                                onChange={onSelectionChange}
+                                onDropdownChange={onSelectionChange}
                                 type={"level"}
                                 selections={levels}
                             />
                             <FilterDropdown
                                 value={module}
-                                onChange={onSelectionChange}
+                                onDropdownChange={onSelectionChange}
                                 type={"module"}
                                 selections={modules}
                             />
                             <FilterDropdown
                                 value={docType}
-                                onChange={onSelectionChange}
+                                onDropdownChange={onSelectionChange}
                                 type={"type"}
                                 selections={docTypes}
                             />

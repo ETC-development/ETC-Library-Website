@@ -4,7 +4,7 @@ import { FilterDropdownProps } from "interfaces/interfaces.index";
 const FilterDropdown: FunctionComponent<FilterDropdownProps> = ({
     type,
     selections,
-    onChange,
+    onDropdownChange,
     value,
 }) => {
     return (
@@ -15,7 +15,7 @@ const FilterDropdown: FunctionComponent<FilterDropdownProps> = ({
         >
             <select
                 name={type}
-                onChange={(e) => onChange(e)}
+                onChange={(e) => onDropdownChange(e)}
                 value={value}
                 className={"border-0 bg-transparent w-full cursor-pointer py-1.5 outline-0"}
             >
