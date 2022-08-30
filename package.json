@@ -12,9 +12,6 @@
     "@fortawesome/free-regular-svg-icons": "^6.1.2",
     "@fortawesome/free-solid-svg-icons": "^6.1.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
-    "@types/node": "^16.7.13",
-    "@types/react": "^18.0.0",
-    "@types/react-dom": "^18.0.0",
     "framer-motion": "^7.2.1",
     "lodash": "^4.17.21",
     "react": "^18.2.0",
@@ -50,12 +47,13 @@
   "devDependencies": {
     "@types/lodash": "^4.14.184",
     "autoprefixer": "^10.4.8",
-    "brunch": "^4.0.1",
+    "@types/node": "^16.7.13",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
     "cssnano": "^5.1.13",
     "postcss": "^8.4.16",
     "prettier": "^2.7.1",
     "react-component-export-image": "^1.0.6",
-    "tailwindcss": "^3.1.8",
-    "terser-brunch": "^4.1.0"
+    "tailwindcss": "^3.1.8"
   }
 }

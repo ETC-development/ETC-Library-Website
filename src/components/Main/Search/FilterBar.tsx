@@ -1,11 +1,5 @@
 import FilterDropdown from "./utils/FilterDropdown";
-import {
-    Dispatch,
-    FunctionComponent,
-    memo,
-    SetStateAction, useEffect,
-    useState
-} from "react";
+import { Dispatch, FunctionComponent, memo, SetStateAction, useEffect, useState } from "react";
 import { FilterDropdownProps } from "interfaces/interfaces.index";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -20,10 +14,7 @@ interface FilterBarProps {
     setDocType: Dispatch<SetStateAction<any>>;
 }
 
-
-
 // TODO: MOVE THESE TO UTIL FUNCTIONS/FILES
-
 
 const levels: FilterDropdownProps["selections"] = modulesArr.map((year) => {
     return {
@@ -62,7 +53,10 @@ const docTypes: FilterDropdownProps["selections"] = [
  * @returns {FilterDropdownProps["selections"]} Array of filters dropdown selections objects
  * @see FilterDropdownProps
  * */
-const getModulesFromLevel = (setModule: Dispatch<SetStateAction<any>>, level?: string ): FilterDropdownProps["selections"] => {
+const getModulesFromLevel = (
+    setModule: Dispatch<SetStateAction<any>>,
+    level?: string
+): FilterDropdownProps["selections"] => {
     let output: FilterDropdownProps["selections"] = [];
 
     // if level is provided, return only modules of that level
@@ -73,7 +67,8 @@ const getModulesFromLevel = (setModule: Dispatch<SetStateAction<any>>, level?: s
                 output.push({ label: module.name, value: module.dropdownValue });
             });
         });
-    } else {  //if level isn't provided, return all modules
+    } else {
+        //if level isn't provided, return all modules
         modulesArr.forEach((year) => {
             year.semesters.forEach((semester) => {
                 semester.modules.forEach((module) => {
@@ -89,17 +84,8 @@ const getModulesFromLevel = (setModule: Dispatch<SetStateAction<any>>, level?: s
     return output;
 };
 
-
-
-
-
-
 const FilterBar: FunctionComponent<FilterBarProps> = memo(
     ({ docType, level, module, setModule, setDocType, setLevel }) => {
-
-
-
-
         const onSelectionChange: FilterDropdownProps["onDropdownChange"] = (e) => {
             switch (e.target.name.toLowerCase()) {
                 case "level":
@@ -117,10 +103,9 @@ const FilterBar: FunctionComponent<FilterBarProps> = memo(
 
         const [modules, setModules] = useState<FilterDropdownProps["selections"]>([]);
 
-
-        useEffect(()=> {
-            setModules(getModulesFromLevel(setModule))
-        }, [setModule])
+        useEffect(() => {
+            setModules(getModulesFromLevel(setModule));
+        }, [setModule]);
 
         return (
             <AnimatePresence>

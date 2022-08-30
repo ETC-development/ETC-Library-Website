@@ -1,4 +1,4 @@
-const Wave: React.FunctionComponent = () => {
+const Wave = () => {
     return (
         <div className={"relative"}>
             <div className="absolute w-full overflow-hidden leading-[0px]">
