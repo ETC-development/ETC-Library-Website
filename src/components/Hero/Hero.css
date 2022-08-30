@@ -1,0 +1,7 @@
+.hero-h1 {
+    @apply text-2xl text-light-text my-3 font-sans font-extrabold lg:text-3xl;
+}
+
+.hero-h2 {
+    @apply text-xl text-light-text font-sans font-semibold lg:text-2xl;
+}

@@ -1,0 +1,7 @@
+.social-icon {
+    @apply mx-2;
+}
+
+.social-icon * {
+    @apply text-3xl text-violet;
+}

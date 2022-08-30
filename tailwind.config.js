@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  mode: 'jit',
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
@@ -13,8 +14,19 @@ module.exports = {
       'light-text': '#F6F9F6',
       'dark-text': '#0C1F47',
       'secondary': '#F37D00',
+      'violet': '#9FADFD',
+      'grey-stroke': '#C2C2C2'
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        'sans' : ['Montserrat', '"Open Sans"'],
+        'cursive': ['Kalam', 'cursive']
+      },
+      spacing: {
+        "100": "32rem",
+        "200": "70rem"
+      }
+    },
   },
   plugins: [],
 }
