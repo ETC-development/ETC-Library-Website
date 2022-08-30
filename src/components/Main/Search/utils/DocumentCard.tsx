@@ -42,6 +42,7 @@ const DocumentCard: FunctionComponent<DocumentCardProps> = ({
                             <CardFilterTag text={`Preparatory Cycle ${doc.year}`} />
                             <CardFilterTag text={`Semester ${doc.semester}`} />
                             <CardFilterTag text={doc.module} />
+                            {doc.submodule && <CardFilterTag text={doc.submodule} />}
                             {/* we slice doc.type to remove last character which is an "s" of plural: exams => exam  */}
                             <CardFilterTag text={doc.type.slice(0, -1)} />
                         </div>

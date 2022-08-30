@@ -44,6 +44,7 @@ export interface DocumentInfo {
     name: string;
     type: string;
     module: string;
+    submodule: string;
     semester: string;
     year: string;
     url: string;
@@ -57,20 +58,6 @@ export interface SearchResponse {
     error?: string;
 }
 
-//
-// export interface FetchFunction {
-//     (
-//         filters: SearchRequestQuery,
-//
-//         setResults: Dispatch<SetStateAction<SearchResponse>>,
-//
-//
-//         setLoading: Dispatch<SetStateAction<boolean>>,
-//
-//         setError: Dispatch<SetStateAction<string>>
-//
-//     ): void;
-// }
 
 export interface FetchFunction {
     (filters: SearchRequestQuery): Promise<{
