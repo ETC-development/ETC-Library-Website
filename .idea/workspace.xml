@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="475514c4-872f-4531-a62f-ee7fa806c055" name="Changes" comment="Add WebStorm config files">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.index.tsx" afterDir="false" />
+    <list default="true" id="475514c4-872f-4531-a62f-ee7fa806c055" name="Changes" comment="Add Infinite scroll loading to search results + Refactor fetch functions to be modular and flexible">
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/Search/FilterBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Search/FilterBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/Search/utils/SearchError.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Search/utils/SearchError.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/Search/utils/SearchLoading.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Search/utils/SearchLoading.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/Wave.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Wave.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,34 +20,39 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2DOoxVyMvDNJoVQCiEcM9BDgL6V" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/salah/programming/web/ETC-Library-Website",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "prettierjs.PrettierConfiguration.Package": "/home/salah/programming/web/ETC-Library-Website/node_modules/prettier",
-    "settings.editor.selected.configurable": "preferences.sourceCode.JavaScript",
-    "ts.external.directory.path": "/home/salah/programming/web/ETC-Library-Website/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/salah/programming/web/ETC-Library-Website&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/home/salah/programming/web/ETC-Library-Website/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/salah/programming/web/ETC-Library-Website/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/assets" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -62,6 +68,15 @@
       <workItem from="1660605873440" duration="3754000" />
       <workItem from="1660654188278" duration="27340000" />
       <workItem from="1660733864636" duration="12071000" />
+      <workItem from="1660830375335" duration="52000" />
+      <workItem from="1661430036967" duration="10586000" />
+      <workItem from="1661441226871" duration="24044000" />
+      <workItem from="1661470005808" duration="127000" />
+      <workItem from="1661520419286" duration="20403000" />
+      <workItem from="1661598853870" duration="13087000" />
+      <workItem from="1661624851623" duration="5000" />
+      <workItem from="1661779069292" duration="27038000" />
+      <workItem from="1661863900142" duration="17742000" />
     </task>
     <task id="LOCAL-00001" summary="enable absolute path import">
       <created>1660580584077</created>
@@ -196,7 +211,105 @@
       <option name="project" value="LOCAL" />
       <updated>1660751972576</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Put Hero, Main and Footer together">
+      <created>1660765588455</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1660765588455</updated>
+    </task>
+    <task id="LOCAL-00021" summary="IDE files">
+      <created>1660765595665</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1660765595665</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Some adjustments and code formatting">
+      <created>1660781420829</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1660781420829</updated>
+    </task>
+    <task id="LOCAL-00023" summary="remove duplicate classes">
+      <created>1661430065496</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1661430065496</updated>
+    </task>
+    <task id="LOCAL-00024" summary="use spacing instead of width, to make it usable with everything">
+      <created>1661441651287</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1661441651287</updated>
+    </task>
+    <task id="LOCAL-00025" summary="provide key prop to list components">
+      <created>1661469135339</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1661469135339</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Add UI and basic functionality of Search">
+      <created>1661469183856</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1661469183856</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Add Search with keyword functionality">
+      <created>1661561225068</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1661561225068</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Convert @import to &lt;link&gt; for fonts">
+      <created>1661561252215</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1661561252215</updated>
+    </task>
+    <task id="LOCAL-00029" summary="add lodash and configure css minifying">
+      <created>1661561296951</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1661561296951</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Add animations and fix ResultsMenu re-rendering problem">
+      <created>1661612452226</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1661612452226</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Overall optimization and code formatting">
+      <created>1661612650929</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1661612650929</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Add loading and error UI functionality to the search">
+      <created>1661801566299</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1661801566299</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Add Infinite scroll loading to search results + Refactor fetch functions to be modular and flexible">
+      <created>1661881798707</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1661881798707</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,11 +328,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="enable absolute path import" />
-    <MESSAGE value="added theme colors to tailwind config file" />
-    <MESSAGE value="Hero component initial commit" />
-    <MESSAGE value="Fixed Hero responsiveness on phone landscape orientation" />
-    <MESSAGE value="added build/ directory to gitignore" />
     <MESSAGE value="added animated scroll icon and motivational quotes in Hero" />
     <MESSAGE value="Add cursive font and custom width" />
     <MESSAGE value="Extracted Wave as a utility component" />
@@ -231,6 +339,20 @@
     <MESSAGE value="Minor style adjustments and corrections" />
     <MESSAGE value="Add prettier" />
     <MESSAGE value="Add WebStorm config files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add WebStorm config files" />
+    <MESSAGE value="Put Hero, Main and Footer together" />
+    <MESSAGE value="IDE files" />
+    <MESSAGE value="Some adjustments and code formatting" />
+    <MESSAGE value="remove duplicate classes" />
+    <MESSAGE value="use spacing instead of width, to make it usable with everything" />
+    <MESSAGE value="provide key prop to list components" />
+    <MESSAGE value="Add UI and basic functionality of Search" />
+    <MESSAGE value="Add Search with keyword functionality" />
+    <MESSAGE value="Convert @import to &lt;link&gt; for fonts" />
+    <MESSAGE value="add lodash and configure css minifying" />
+    <MESSAGE value="Add animations and fix ResultsMenu re-rendering problem" />
+    <MESSAGE value="Overall optimization and code formatting" />
+    <MESSAGE value="Add loading and error UI functionality to the search" />
+    <MESSAGE value="Add Infinite scroll loading to search results + Refactor fetch functions to be modular and flexible" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Infinite scroll loading to search results + Refactor fetch functions to be modular and flexible" />
   </component>
 </project>

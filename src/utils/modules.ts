@@ -1,8 +1,10 @@
 import { Year } from "interfaces/interfaces.index";
 
+//TODO: reduce dimensionality of this
 const cardsInfo: Year[] = [
     {
         title: "First Preparatory Cycle",
+        dropDownValue: "1",
         semesters: [
             {
                 title: "Semester 1",
@@ -10,22 +12,27 @@ const cardsInfo: Year[] = [
                     {
                         name: "Intensive English",
                         url: "",
+                        dropdownValue: "intensive english",
                     },
                     {
                         name: "Critical Thinking and Creative Problem Solving (CPSCT)",
                         url: "",
+                        dropdownValue: "cpsct",
                     },
                     {
                         name: "Analysis 1",
                         url: "",
+                        dropdownValue: "analysis 1",
                     },
                     {
                         name: "Algebra 1",
                         url: "",
+                        dropdownValue: "algebra 1",
                     },
                     {
                         name: "Academic Communication 1",
                         url: "",
+                        dropdownValue: "academic communication 1",
                     },
                 ],
             },
@@ -35,26 +42,32 @@ const cardsInfo: Year[] = [
                     {
                         name: "Analysis 2",
                         url: "",
+                        dropdownValue: "analysis 2",
                     },
                     {
                         name: "Introduction to Programming in C++",
                         url: "",
+                        dropdownValue: "introduction to programming in C++",
                     },
                     {
                         name: "Academic Communication 2",
                         url: "",
+                        dropdownValue: "academic communication 2",
                     },
                     {
                         name: "Linear Algebra",
                         url: "",
+                        dropdownValue: "linear algebra",
                     },
                     {
                         name: "Probabilties and Statistics",
                         url: "",
+                        dropdownValue: "probabilities and statistics",
                     },
                     {
                         name: "Object Oriented Programming",
                         url: "",
+                        dropdownValue: "Object Oriented Programming",
                     },
                 ],
             },
@@ -62,37 +75,35 @@ const cardsInfo: Year[] = [
     },
     {
         title: "Second Preparatory Cycle",
+        dropDownValue: "2",
         semesters: [
             {
                 title: "Semester 1",
                 modules: [
                     {
-                        name: "Machine Structure.",
+                        name: "Intensive English",
                         url: "",
+                        dropdownValue: "a",
                     },
                     {
-                        name: "Databases.",
+                        name: "Critical Thinking and Creative Problem Solving (CPSCT)",
                         url: "",
+                        dropdownValue: "b",
                     },
                     {
-                        name: "Computer Architecture.",
+                        name: "Analysis 1",
                         url: "",
+                        dropdownValue: "c",
                     },
                     {
-                        name: "Software Engineering.",
+                        name: "Algebra 1",
                         url: "",
+                        dropdownValue: "d",
                     },
                     {
-                        name: "Data Structures.",
+                        name: "Academic Communication 1",
                         url: "",
-                    },
-                    {
-                        name: "Introduction to AI.",
-                        url: "",
-                    },
-                    {
-                        name: "Introduction to Business.",
-                        url: "",
+                        dropdownValue: "MM",
                     },
                 ],
             },
@@ -100,32 +111,34 @@ const cardsInfo: Year[] = [
                 title: "Semester 2",
                 modules: [
                     {
-                        name: "Machine Structure.",
+                        name: "Analysis 2",
                         url: "",
+                        dropdownValue: "f",
                     },
                     {
-                        name: "Databases.",
+                        name: "Introduction to Programming in C++",
                         url: "",
+                        dropdownValue: "e",
                     },
                     {
-                        name: "Computer Architecture.",
+                        name: "Academic Communication 2",
                         url: "",
+                        dropdownValue: "j",
                     },
                     {
-                        name: "Software Engineering.",
+                        name: "Linear Algebra",
                         url: "",
+                        dropdownValue: "k",
                     },
                     {
-                        name: "Data Structures.",
+                        name: "Probabilties and Statistics",
                         url: "",
+                        dropdownValue: "l",
                     },
                     {
-                        name: "Introduction to AI.",
+                        name: "Object Oriented Programming",
                         url: "",
-                    },
-                    {
-                        name: "Introduction to Business.",
-                        url: "",
+                        dropdownValue: "m",
                     },
                 ],
             },

@@ -3,7 +3,7 @@ import "./Footer.css";
 // importing main pictures of the footer
 import Computer from "assets/computer.svg";
 import Math from "assets/math.svg";
-import Logo from "assets/ETC Logo.png";
+import Logo from "assets/ETC Logo.webp";
 
 // importing the icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -29,7 +29,7 @@ const Footer: React.FunctionComponent = () => {
                 <h1 className="text-3xl lg:text-4xl text-light-text tracking-widest font-semibold">
                     Contribute
                 </h1>
-                <div className="w-full font-medium my-6 lg:px-[5%] flex flex-col lg:gap-96 lg:flex-row items-center lg:items-start justify-evenly lg:justify-between">
+                <div className="w-full font-medium my-6 lg:px-[5%] flex flex-col lg:gap-[10%] lg:flex-row items-center lg:items-start justify-evenly lg:justify-between">
                     <Contribution
                         illustration={Computer}
                         buttonIcon={faGithub}
@@ -45,39 +45,31 @@ const Footer: React.FunctionComponent = () => {
                             />{" "}
                             by
                         </h1>
-                        <img src={Logo} alt="ETC logo" className="w-40 lg:w-60 m-auto" />
+                        <img
+                            width={240}
+                            height={240}
+                            src={Logo}
+                            alt="ETC logo"
+                            className="w-40 lg:w-60 m-auto"
+                        />
                         <div className="flex justify-center">
                             <a
                                 className="social-icon"
                                 href="https://web.facebook.com/ensia.tech.community/"
                             >
-                                <FontAwesomeIcon
-                                    icon={faSquareFacebook}
-
-                                />
+                                <FontAwesomeIcon icon={faSquareFacebook} />
                             </a>
                             <a className="social-icon" href="https://www.instagram.com/etc_.club/">
-                                <FontAwesomeIcon
-                                    icon={faInstagram}
-
-                                />
+                                <FontAwesomeIcon icon={faInstagram} />
                             </a>
                             <a
                                 className="social-icon"
                                 href="https://www.linkedin.com/company/ensia-tech-community/?originalSubdomain=dz"
                             >
-                                <FontAwesomeIcon
-                                    icon={faLinkedin}
-
-                                />
+                                <FontAwesomeIcon icon={faLinkedin} />
                             </a>
-                            <a
-                                className="social-icon"
-                                href="https://www.google.com/intl/fr/gmail/about"
-                            >
-                                <FontAwesomeIcon
-                                    icon={faEnvelope}
-                                />
+                            <a className="social-icon" href="mailto:tech-community@ensia.edu.dz">
+                                <FontAwesomeIcon icon={faEnvelope} />
                             </a>
                         </div>
                     </div>

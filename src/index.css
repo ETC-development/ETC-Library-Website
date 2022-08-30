@@ -1,17 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
-
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-body, html {
+body,
+html {
     height: 100%;
+    scroll-behavior: smooth;
     @apply bg-light-bg;
 }
-
-
 
 *,
 *::before,
