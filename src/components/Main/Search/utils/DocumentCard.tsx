@@ -1,5 +1,5 @@
 import CardFilterTag from "./CardFilterTag";
-import { FunctionComponent } from "react";
+import { FunctionComponent, RefObject } from "react";
 import { DocumentInfo } from "../../../../interfaces/interfaces.index";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -7,12 +7,19 @@ interface DocumentCardProps {
     doc: DocumentInfo;
     index: number;
     totalResults: number;
+    docRef: RefObject<HTMLAnchorElement>;
 }
 
-const DocumentCard: FunctionComponent<DocumentCardProps> = ({ doc, index, totalResults }) => {
+const DocumentCard: FunctionComponent<DocumentCardProps> = ({
+    doc,
+    index,
+    totalResults,
+    docRef,
+}) => {
     return (
         <AnimatePresence>
             <motion.a
+                ref={docRef}
                 initial={{ opacity: 0, y: -50 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, scaleY: 0 }}

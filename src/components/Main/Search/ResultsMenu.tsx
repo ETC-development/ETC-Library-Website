@@ -1,4 +1,4 @@
-import { FunctionComponent, memo } from "react";
+import { FunctionComponent, memo, RefObject, UIEventHandler } from "react";
 import { SearchResponse } from "interfaces/interfaces.index";
 import DocumentCard from "./utils/DocumentCard";
 import { AnimatePresence, motion } from "framer-motion";
@@ -9,15 +9,18 @@ interface ResultsMenuProps {
     results: SearchResponse;
     isLoading: boolean;
     errorMsg: string;
+    handleResultsScroll: UIEventHandler<HTMLDivElement>;
+    docRef: RefObject<HTMLAnchorElement>;
 }
 
 const ResultsMenu: FunctionComponent<ResultsMenuProps> = memo(
-    ({ results, isLoading, errorMsg }) => {
+    ({ results, isLoading, errorMsg, handleResultsScroll, docRef }) => {
         const renderCards = () => {
             return results.files.map((doc, i) => {
                 return (
                     <div key={doc.url}>
                         <DocumentCard
+                            docRef={docRef}
                             doc={doc}
                             index={i}
                             totalResults={results.totalFilesCount}
@@ -37,9 +40,18 @@ const ResultsMenu: FunctionComponent<ResultsMenuProps> = memo(
                     exit={{ opacity: 0, scaleY: 0 }}
                     className="search-menu my-2 flex flex-col w-full max-w-full max-h-96 md:max-h-100 lg:w-200 mx-auto bg-white rounded-xl shadow-md"
                 >
-                    <div className={"overscroll-contain overflow-y-scroll px-3 py-1"}>
+                    <div
+                        onScroll={handleResultsScroll}
+                        className={"overscroll-contain overflow-y-scroll px-3 py-1"}
+                    >
                         {/* if error, render error, else { if loading, render loading, else renderCards }*/}
-                        {errorMsg ? <SearchError errorMsg={errorMsg} /> : isLoading ? <SearchLoading /> : renderCards()}
+                        {errorMsg ? (
+                            <SearchError errorMsg={errorMsg} />
+                        ) : isLoading ? (
+                            <SearchLoading />
+                        ) : (
+                            renderCards()
+                        )}
                     </div>
                 </motion.div>
             </AnimatePresence>

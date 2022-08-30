@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="475514c4-872f-4531-a62f-ee7fa806c055" name="Changes" comment="add lodash and configure css minifying">
-      <change afterPath="$PROJECT_DIR$/src/assets/ETC Logo.avif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/ETC Logo.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="475514c4-872f-4531-a62f-ee7fa806c055" name="Changes" comment="Add loading and error UI functionality to the search">
+      <change afterPath="$PROJECT_DIR$/src/assets/search.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/searching.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/searching1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/searching2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/fetchFunction.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/hooks/useDebounce.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/hooks/useThrottle.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Hero/Hero.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/Hero.index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Main/Search/FilterBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Search/FilterBar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Main/Search/ResultsMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Search/ResultsMenu.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Main/Search/Search.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Search/Search.index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/Search/SearchBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Search/SearchBar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Main/Search/utils/DocumentCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Search/utils/DocumentCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/Search/utils/SearchError.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Search/utils/SearchError.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/Search/utils/SearchLoading.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Search/utils/SearchLoading.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/interfaces.index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/interfaces.index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/Wave.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Wave.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +51,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
     &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/home/salah/programming/web/ETC-Library-Website/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/home/salah/programming/web/ETC-Library-Website/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -56,6 +61,11 @@
       <recent name="$PROJECT_DIR$/src/assets" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -76,7 +86,10 @@
       <workItem from="1661441226871" duration="24044000" />
       <workItem from="1661470005808" duration="127000" />
       <workItem from="1661520419286" duration="20403000" />
-      <workItem from="1661598853870" duration="9249000" />
+      <workItem from="1661598853870" duration="13087000" />
+      <workItem from="1661624851623" duration="5000" />
+      <workItem from="1661779069292" duration="27038000" />
+      <workItem from="1661863900142" duration="17192000" />
     </task>
     <task id="LOCAL-00001" summary="enable absolute path import">
       <created>1660580584077</created>
@@ -281,7 +294,28 @@
       <option name="project" value="LOCAL" />
       <updated>1661561296951</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Add animations and fix ResultsMenu re-rendering problem">
+      <created>1661612452226</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1661612452226</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Overall optimization and code formatting">
+      <created>1661612650929</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1661612650929</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Add loading and error UI functionality to the search">
+      <created>1661801566299</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1661801566299</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,9 +334,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added theme colors to tailwind config file" />
-    <MESSAGE value="Hero component initial commit" />
-    <MESSAGE value="Fixed Hero responsiveness on phone landscape orientation" />
     <MESSAGE value="added build/ directory to gitignore" />
     <MESSAGE value="added animated scroll icon and motivational quotes in Hero" />
     <MESSAGE value="Add cursive font and custom width" />
@@ -325,6 +356,9 @@
     <MESSAGE value="Add Search with keyword functionality" />
     <MESSAGE value="Convert @import to &lt;link&gt; for fonts" />
     <MESSAGE value="add lodash and configure css minifying" />
-    <option name="LAST_COMMIT_MESSAGE" value="add lodash and configure css minifying" />
+    <MESSAGE value="Add animations and fix ResultsMenu re-rendering problem" />
+    <MESSAGE value="Overall optimization and code formatting" />
+    <MESSAGE value="Add loading and error UI functionality to the search" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add loading and error UI functionality to the search" />
   </component>
 </project>

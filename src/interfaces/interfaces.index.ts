@@ -24,7 +24,7 @@ export interface FilterDropdownProps {
         label: string;
         value: string;
     }[];
-    onChange: ChangeEventHandler<HTMLSelectElement>;
+    onDropdownChange: ChangeEventHandler<HTMLSelectElement>;
     value: string;
 }
 
@@ -55,4 +55,26 @@ export interface SearchResponse {
     totalPages: number;
     currentPage: number;
     error?: string;
+}
+
+//
+// export interface FetchFunction {
+//     (
+//         filters: SearchRequestQuery,
+//
+//         setResults: Dispatch<SetStateAction<SearchResponse>>,
+//
+//
+//         setLoading: Dispatch<SetStateAction<boolean>>,
+//
+//         setError: Dispatch<SetStateAction<string>>
+//
+//     ): void;
+// }
+
+export interface FetchFunction {
+    (filters: SearchRequestQuery): Promise<{
+        data?: SearchResponse;
+        errorMsg?: string;
+    }>;
 }
