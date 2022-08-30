@@ -1,7 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+#root {
+  font-family: "Montserrat", sans-serif;
 body,
 html {
     height: 100%;
