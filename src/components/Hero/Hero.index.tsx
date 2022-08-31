@@ -9,7 +9,7 @@ import Wave from "utils/Wave";
 
 const Hero = () => {
     return (
-        <div className="flex flex-col bg-dark-bg text-light-text font-sans">
+        <section id={"home"} className="flex flex-col pt-20 bg-dark-bg text-light-text font-sans">
             {/* Illustration + Paragraph */}
             <div className="bg-dark-bg lg:h-fit w-full flex-grow-0 flex-shrink flex flex-no-wrap flex-col-reverse justify-center content-center px-2 lg:flex-row lg:justify-around lg:px-10">
                 {/* Paragraphs */}
@@ -76,7 +76,7 @@ const Hero = () => {
 
             {/* Wave SVGs */}
             <Wave />
-        </div>
+        </section>
     );
 };
 

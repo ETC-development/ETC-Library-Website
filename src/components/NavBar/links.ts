@@ -1,32 +1,29 @@
 let links = [
     {
-        "label": "Home",
-        "link": "#"
+        label: "Home",
+        full: "Home",
+        link: "#",
     },
     {
-        "label": "1PC",
-        "link": "#1pc"
+        label: "Search",
+        full: "Search",
+        link: "#search",
     },
     {
-        "label": "2PC",
-        "link": "#1pc"
+        label: "1PC",
+        full: "First Preparatory Cycle",
+        link: "#1",
     },
     {
-        "label": "1SC",
-        "link": "#1pc"
+        label: "2PC",
+        full: "Second Preparatory Cycle",
+        link: "#2",
     },
     {
-        "label": "2SC",
-        "link": "#1pc"
+        label: "Contribute",
+        full: "Contribute",
+        link: "https://github.com/ETC-development/ETC-Library-Website",
     },
-    {
-        "label": "3SC",
-        "link": "#1pc"
-    },
-    {
-        "label": "Contribute",
-        "link": "https://github.com/ETC-development/ETC-Library-Website"
-    }
-]
+];
 
 export default links;

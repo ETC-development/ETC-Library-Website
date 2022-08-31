@@ -1,7 +1,3 @@
 .module {
     @apply mx-4 hover:underline my-2 text-[16px] w-fit;
 }
-
-#main {
-    scroll-margin-top: 70px;
-}

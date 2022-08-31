@@ -96,7 +96,6 @@ const Search = () => {
         }
     }, [isTimeToLoadMore, results, docType, level, module, debouncedSearch]);
 
-
     // handling side effects related to changing search queries by fetching new docs based on the changes
     useEffect(() => {
         if (debouncedSearch || module || docType || level) {
@@ -110,7 +109,7 @@ const Search = () => {
                 year: level,
                 name: debouncedSearch,
             })
-                .then((res: {data?: SearchResponse, errorMsg?: string}) => {
+                .then((res: { data?: SearchResponse; errorMsg?: string }) => {
                     if (res.data) {
                         setResults(res.data);
                     } else if (res.errorMsg) {
@@ -127,7 +126,7 @@ const Search = () => {
     }, [debouncedSearch, module, docType, level]);
 
     return (
-        <div className="px-2  w-full flex flex-col items-center">
+        <section id={"search"} className="px-2  w-full flex flex-col items-center scroll-mt-20">
             <h2 className={"p-3 my-2 text-[18px] text-center"}>
                 Find what you need faster and efficiently
             </h2>
@@ -158,7 +157,7 @@ const Search = () => {
                     errorMsg={errorMsg}
                 />
             )}
-        </div>
+        </section>
     );
 };
 

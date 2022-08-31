@@ -1,12 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="475514c4-872f-4531-a62f-ee7fa806c055" name="Changes" comment="Add Infinite scroll loading to search results + Refactor fetch functions to be modular and flexible">
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/Search/FilterBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Search/FilterBar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/Search/utils/SearchError.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Search/utils/SearchError.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/Search/utils/SearchLoading.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Search/utils/SearchLoading.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/Wave.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Wave.tsx" afterDir="false" />
+    <list default="true" id="475514c4-872f-4531-a62f-ee7fa806c055" name="Changes" comment="Integrate Abderrahim's Navbar with the website with some adjustments">
+      <change afterPath="$PROJECT_DIR$/src/assets/bars.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/close.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Aside/Aside.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/School Logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/School Logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/hamburger.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/hamburger.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Aside/Aside.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Aside/Aside.index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Hero/Hero.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/Hero.index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/Main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/Main.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Main.index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/Search/Search.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Search/Search.index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavBar/NavBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/NavBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavBar/NavBar.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/NavBar.index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavBar/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavBar/links.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/links.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +29,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -35,10 +55,12 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/salah/programming/web/ETC-Library-Website&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
     &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/home/salah/programming/web/ETC-Library-Website/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/home/salah/programming/web/ETC-Library-Website/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -77,6 +99,9 @@
       <workItem from="1661624851623" duration="5000" />
       <workItem from="1661779069292" duration="27038000" />
       <workItem from="1661863900142" duration="17742000" />
+      <workItem from="1661900386204" duration="18000" />
+      <workItem from="1661900413618" duration="5718000" />
+      <workItem from="1661955469838" duration="8293000" />
     </task>
     <task id="LOCAL-00001" summary="enable absolute path import">
       <created>1660580584077</created>
@@ -328,7 +353,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added animated scroll icon and motivational quotes in Hero" />
     <MESSAGE value="Add cursive font and custom width" />
     <MESSAGE value="Extracted Wave as a utility component" />
     <MESSAGE value="Removed full stops from quotes" />
@@ -353,6 +377,7 @@
     <MESSAGE value="Overall optimization and code formatting" />
     <MESSAGE value="Add loading and error UI functionality to the search" />
     <MESSAGE value="Add Infinite scroll loading to search results + Refactor fetch functions to be modular and flexible" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Infinite scroll loading to search results + Refactor fetch functions to be modular and flexible" />
+    <MESSAGE value="Integrate Abderrahim's Navbar with the website with some adjustments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Integrate Abderrahim's Navbar with the website with some adjustments" />
   </component>
 </project>

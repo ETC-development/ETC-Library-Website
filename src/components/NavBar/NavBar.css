@@ -1,7 +1,7 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 #main-menu li:last-child {
-    @apply font-bold border-2 border-solid rounded-md border-secondary p-2 hover:bg-secondary;
+    @apply border-2 border-solid rounded-xl border-secondary p-2 hover:bg-[#31416e];
+}
+
+#main-menu li:last-child a {
+    @apply border-0
 }

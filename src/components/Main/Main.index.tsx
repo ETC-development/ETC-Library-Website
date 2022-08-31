@@ -6,7 +6,7 @@ import Search from "./Search/Search.index";
 const Main = () => {
     return (
         <>
-            <div id={"main"} className={"my-32"}>
+            <main id={"main"} className={"my-32 scroll-mt-24"}>
                 <h1 className="text-3xl lg:text-4xl py-12 text-center text-dark-text-text tracking-widest font-semibold">
                     Resources
                 </h1>
@@ -14,8 +14,11 @@ const Main = () => {
                 {cardsInfo.map((card) => {
                     return (
                         <div
+                            id={card.dropDownValue}
                             key={card.title}
-                            className={"page w-full my-16 flex justify-center items-center"}
+                            className={
+                                "page w-full my-16 flex justify-center items-center scroll-mt-20"
+                            }
                         >
                             <div className="card mx-2 h-fit w-200 font-sans text-dark-bg">
                                 <div className="cardTitle w-full py-4 bg-dark-bg rounded-t-3xl flex justify-center items-center mb-4">
@@ -31,7 +34,7 @@ const Main = () => {
                         </div>
                     );
                 })}
-            </div>
+            </main>
         </>
     );
 };
