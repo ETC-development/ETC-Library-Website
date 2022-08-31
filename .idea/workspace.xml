@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="475514c4-872f-4531-a62f-ee7fa806c055" name="Changes" comment="Overall adjustments and improvements">
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    <list default="true" id="475514c4-872f-4531-a62f-ee7fa806c055" name="Changes" comment="Add correct href link and make typescript a dev dependency">
+      <change beforePath="$PROJECT_DIR$/public/design.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -329,7 +330,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661969760704</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Add correct href link and make typescript a dev dependency">
+      <created>1661975641352</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1661975641352</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -348,7 +356,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Extracted Wave as a utility component" />
     <MESSAGE value="Removed full stops from quotes" />
     <MESSAGE value="Code formatting" />
     <MESSAGE value="add yarn.lock" />
@@ -373,6 +380,7 @@
     <MESSAGE value="Add Infinite scroll loading to search results + Refactor fetch functions to be modular and flexible" />
     <MESSAGE value="Integrate Abderrahim's Navbar with the website with some adjustments" />
     <MESSAGE value="Overall adjustments and improvements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Overall adjustments and improvements" />
+    <MESSAGE value="Add correct href link and make typescript a dev dependency" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add correct href link and make typescript a dev dependency" />
   </component>
 </project>
