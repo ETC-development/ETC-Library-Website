@@ -5,6 +5,7 @@ import FilterBar from "./FilterBar";
 import { SearchResponse } from "interfaces/interfaces.index";
 import fetchFunction from "utils/fetchFunction";
 import useDebounce from "utils/hooks/useDebounce";
+import TitleSubtitle from "../TitleSubtitle";
 
 const limit = 20;
 
@@ -126,10 +127,16 @@ const Search = () => {
     }, [debouncedSearch, module, docType, level]);
 
     return (
-        <section id={"search"} className="px-2  w-full flex flex-col items-center scroll-mt-20">
-            <h2 className={"p-3 my-2 text-[18px] text-center"}>
-                Find what you need faster and efficiently
-            </h2>
+        <section
+            id={"search"}
+            className="px-2 my-32 w-full flex flex-col items-center scroll-mt-20"
+        >
+            <TitleSubtitle
+                title={"Search"}
+                subtitle={
+                    "Find what you need faster and efficiently using either file names or specific filters"
+                }
+            />
             <SearchBar
                 isFilterOpen={isFilterOpen}
                 query={searchQuery}

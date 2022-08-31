@@ -19,9 +19,9 @@ import {
 import Wave from "utils/Wave";
 import Contribution from "./Contribution";
 
-const Footer: React.FunctionComponent = () => {
+const Footer = () => {
     return (
-        <div className="w-full font-sans text-light-text">
+        <footer id={"contribute"} className="w-full font-sans text-light-text">
             <div className={"rotate-180"}>
                 <Wave />
             </div>
@@ -29,14 +29,14 @@ const Footer: React.FunctionComponent = () => {
                 <h1 className="text-3xl lg:text-4xl text-light-text tracking-widest font-semibold">
                     Contribute
                 </h1>
-                <div className="w-full font-medium my-6 lg:px-[5%] flex flex-col lg:gap-[10%] lg:flex-row items-center lg:items-start justify-evenly lg:justify-between">
+                <div className="w-full font-medium my-6 lg:px-[5%] flex flex-col lg:flex-row items-center lg:items-start justify-evenly lg:justify-around">
                     <Contribution
                         illustration={Computer}
                         buttonIcon={faGithub}
                         buttonText={"Contribute on Github"}
                     />
 
-                    <div className="my-10 text-center lg:mt-28">
+                    <div className="my-10 flex-grow text-center lg:mt-24">
                         <h1 className="flex text-light-text text-2xl justify-center tracking-widest">
                             Made with
                             <FontAwesomeIcon
@@ -50,7 +50,7 @@ const Footer: React.FunctionComponent = () => {
                             height={240}
                             src={Logo}
                             alt="ETC logo"
-                            className="w-40 lg:w-60 m-auto"
+                            className="w-40 lg:w-48 m-auto"
                         />
                         <div className="flex justify-center">
                             <a
@@ -82,12 +82,12 @@ const Footer: React.FunctionComponent = () => {
                 </div>
                 <div className="font-light">
                     <p className="text-grey-text">All Rights Reserved 2022</p>
-                    <a href="TODO">
+                    <a href="https://www.gnu.org/licenses/gpl-3.0.txt">
                         <p className="text-grey-text">License Information</p>
                     </a>
                 </div>
             </div>
-        </div>
+        </footer>
     );
 };
 

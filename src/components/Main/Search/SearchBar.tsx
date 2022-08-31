@@ -24,7 +24,7 @@ const SearchBar: FunctionComponent<SearchBarProps> = ({
                 <FontAwesomeIcon icon={faSearch} />
             </div>
             <input
-                className="focus:outline-none max-w-full flex-grow w-full p-2 placeholder-grey-stroke text-dark-text"
+                className="focus:outline-none max-w-full flex-grow w-full p-2 placeholder-grey-stroke text-sm md:text-md text-dark-text"
                 type="search"
                 maxLength={100}
                 name="search-input"

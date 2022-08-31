@@ -1,27 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="475514c4-872f-4531-a62f-ee7fa806c055" name="Changes" comment="Integrate Abderrahim's Navbar with the website with some adjustments">
-      <change afterPath="$PROJECT_DIR$/src/assets/bars.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/close.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Aside/Aside.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
+    <list default="true" id="475514c4-872f-4531-a62f-ee7fa806c055" name="Changes" comment="Overall adjustments and improvements">
+      <change afterPath="$PROJECT_DIR$/src/components/Main/TitleSubtitle.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/School Logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/School Logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/hamburger.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/hamburger.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Aside/Aside.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Aside/Aside.index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/computer.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/computer.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/Contribution.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Contribution.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Hero/Hero.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/Hero.index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/Main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Main/Main.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Main.index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Main/Search/Search.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Search/Search.index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/Search/SearchBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Search/SearchBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/SemesterCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/SemesterCard.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/NavBar/NavBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/NavBar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/NavBar/NavBar.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/NavBar.index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavBar/index.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/NavBar/links.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/links.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +94,7 @@
       <workItem from="1661863900142" duration="17742000" />
       <workItem from="1661900386204" duration="18000" />
       <workItem from="1661900413618" duration="5718000" />
-      <workItem from="1661955469838" duration="8293000" />
+      <workItem from="1661955469838" duration="13599000" />
     </task>
     <task id="LOCAL-00001" summary="enable absolute path import">
       <created>1660580584077</created>
@@ -334,7 +327,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661881798707</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Integrate Abderrahim's Navbar with the website with some adjustments">
+      <created>1661964470170</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1661964470170</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -353,7 +353,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Add cursive font and custom width" />
     <MESSAGE value="Extracted Wave as a utility component" />
     <MESSAGE value="Removed full stops from quotes" />
     <MESSAGE value="Code formatting" />
@@ -378,6 +377,7 @@
     <MESSAGE value="Add loading and error UI functionality to the search" />
     <MESSAGE value="Add Infinite scroll loading to search results + Refactor fetch functions to be modular and flexible" />
     <MESSAGE value="Integrate Abderrahim's Navbar with the website with some adjustments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Integrate Abderrahim's Navbar with the website with some adjustments" />
+    <MESSAGE value="Overall adjustments and improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Overall adjustments and improvements" />
   </component>
 </project>

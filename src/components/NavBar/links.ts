@@ -10,19 +10,19 @@ let links = [
         link: "#search",
     },
     {
-        label: "1PC",
+        label: "PC1",
         full: "First Preparatory Cycle",
         link: "#1",
     },
     {
-        label: "2PC",
+        label: "PC2",
         full: "Second Preparatory Cycle",
         link: "#2",
     },
     {
         label: "Contribute",
         full: "Contribute",
-        link: "https://github.com/ETC-development/ETC-Library-Website",
+        link: "#contribute",
     },
 ];
 
