@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="475514c4-872f-4531-a62f-ee7fa806c055" name="Changes" comment="Overall adjustments and improvements">
-      <change afterPath="$PROJECT_DIR$/src/components/Main/TitleSubtitle.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/computer.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/computer.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Contribution.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Contribution.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Hero/Hero.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/Hero.index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/Main.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Main.index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/Search/Search.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Search/Search.index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/Search/SearchBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Search/SearchBar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/SemesterCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/SemesterCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavBar/NavBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/NavBar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavBar/NavBar.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/NavBar.index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavBar/links.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/links.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/fetchFunction.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/fetchFunction.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +84,7 @@
       <workItem from="1661863900142" duration="17742000" />
       <workItem from="1661900386204" duration="18000" />
       <workItem from="1661900413618" duration="5718000" />
-      <workItem from="1661955469838" duration="13599000" />
+      <workItem from="1661955469838" duration="14817000" />
     </task>
     <task id="LOCAL-00001" summary="enable absolute path import">
       <created>1660580584077</created>
@@ -334,7 +324,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661964470170</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Overall adjustments and improvements">
+      <created>1661969760704</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1661969760704</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

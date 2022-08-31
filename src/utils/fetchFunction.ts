@@ -1,6 +1,9 @@
 import { FetchFunction, SearchResponse } from "../interfaces/interfaces.index";
 
-const URL = "http://localhost:3001";
+const URL =
+    process.env.NODE_ENV === "production"
+        ? process.env.REACT_APP_SERVER_URL_PROD || ""
+        : process.env.REACT_APP_SERVER_URL_DEV || "";
 
 const fetchFunction: FetchFunction = async (filters) => {
     const { name = "", module, year, type, page, limit } = filters;
