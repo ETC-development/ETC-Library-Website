@@ -1,40 +1,45 @@
-import React from "react";
+import { Dispatch, FunctionComponent, SetStateAction } from "react";
 import links from "../NavBar/links";
-import hbMenu from "../../assets/hamburger.svg";
-import xmark from "../../assets/xmark.svg";
+import { AnimatePresence, motion } from "framer-motion";
+import "./Aside.css";
 
-export default function Aside() {
-  const [isOpen, setIsOpen] = React.useState(false);
-
-  return (
-    <div className="flex flex-end items-center">
-      <button
-        className="md:hidden fixed items-center justify-center p-2 top-5 right-5 z-10"
-        onClick={() => setIsOpen(!isOpen)}
-      >
-        <img src={isOpen ? xmark : hbMenu} alt="click" />
-      </button>
-      <div
-        id="side-menu"
-        className={`md:hidden fixed pt-20 top-0 right-0 w-3/5 p-6 bg-dark-bg ${
-          isOpen ? "-translate-y-0 shadow-[0_0_4px_4px_rgba(0,0,0,.2)]" : "-translate-y-full"
-        } ease-in-out duration-300`}
-      >
-        <ul className={`items-center text-white flex flex-col`}>
-          {links.map((link) => {
-            return (
-              <li
-                className="mx-2 w-full border-b-2 border-secondary text-center p-2 hover:border-2 hover:bg-secondary"
-                onClick={() => {
-                  setIsOpen(!isOpen);
-                }}
-              >
-                <a href={link.link}>{link.label}</a>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
-    </div>
-  );
+interface AsideProps {
+    isOpen: boolean;
+    setIsOpen: Dispatch<SetStateAction<any>>;
 }
+
+//TODO fix SVGs centering
+const Aside: FunctionComponent<AsideProps> = ({ isOpen, setIsOpen }) => {
+    return (
+        <AnimatePresence>
+            <motion.div
+                onClick={() => {}}
+                initial={{ y: -50, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: -50 }}
+                transition={{ ease: "easeOut" }}
+                layout
+                className={`aside flex justify-center md:hidden w-full bg-dark-bg pb-6 z-10`}
+            >
+                <ul className={`list items-center w-10/12 text-white flex flex-col`}>
+                    {links.map((link) => {
+                        return (
+                            <a
+                                key={link.full}
+                                className="list-item px-16 py-2 my-2 rounded-2xl text-center"
+                                href={link.link}
+                                onClick={() => {
+                                    setIsOpen(!isOpen);
+                                }}
+                            >
+                                <span>{link.full}</span>
+                            </a>
+                        );
+                    })}
+                </ul>
+            </motion.div>
+        </AnimatePresence>
+    );
+};
+
+export default Aside;

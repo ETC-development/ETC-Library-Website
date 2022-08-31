@@ -1,14 +1,19 @@
+import NavBar from "./components/NavBar/NavBar.index";
+import { FunctionComponent } from "react";
 import Hero from "./components/Hero/Hero.index";
-import Main from "./components/Main/Main.index";
 import Footer from "./components/Footer/Footer.index";
+import Main from "./components/Main/Main.index";
 
-const App = () => {
+interface AppProps {}
+
+const App: FunctionComponent<AppProps> = () => {
     return (
-        <div>
+        <>
+            <NavBar />
             <Hero />
             <Main />
             <Footer />
-        </div>
+        </>
     );
 };
 

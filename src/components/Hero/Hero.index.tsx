@@ -9,9 +9,9 @@ import Wave from "utils/Wave";
 
 const Hero = () => {
     return (
-        <div className="flex flex-col bg-dark-bg text-light-text font-sans">
+        <section id={"home"} className="flex flex-col pt-20 bg-dark-bg text-light-text font-sans">
             {/* Illustration + Paragraph */}
-            <div className="bg-dark-bg lg:h-fit w-full flex-grow-0 flex-shrink flex flex-no-wrap flex-col-reverse justify-center content-center px-2 lg:flex-row lg:justify-around lg:px-10">
+            <div className="bg-dark-bg lg:h-[calc(100vh-300px)] w-full flex-grow-0 flex-shrink flex flex-no-wrap flex-col-reverse justify-center content-center px-2 lg:flex-row lg:justify-around lg:px-10">
                 {/* Paragraphs */}
                 <div className="flex flex-shrink flex-col text-center lg:text-left gap-4 justify-center content-center">
                     <h1 className="hero-h1">
@@ -50,15 +50,15 @@ const Hero = () => {
                 </div>
 
                 {/* Illustration */}
-                <div className="my-6 flex flex-col w-full lg:w-100 justify-center content-center">
+                <div className="my-6 flex flex-col w-full lg:w-[450px] justify-center content-center">
                     <img
                         width={512}
                         height={290}
-                        className="m-auto w-96 lg:w-full"
+                        className="mx-auto w-96 lg:w-full"
                         alt="hero illustration"
                         src={HeroIllustration}
                     />
-                    <div className={"text-center text-2xl p-4 font-cursive mt-6"}>
+                    <div className={"text-center text-2xl font-cursive my-3 p-3 lg:p-0"}>
                         “{quotes[Math.floor(Math.random() * quotes.length)]}”
                     </div>
                 </div>
@@ -76,7 +76,7 @@ const Hero = () => {
 
             {/* Wave SVGs */}
             <Wave />
-        </div>
+        </section>
     );
 };
 
