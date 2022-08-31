@@ -13,7 +13,7 @@ export default function NavBar() {
     return (
         <nav className={"w-full fixed z-10 top-0"}>
             <motion.div className="bg-dark-bg flex justify-between items-center px-3 py-1 md:py-2.5 md:px-5">
-                <a className={"w-2"} href="#">
+                <a className={"w-2"} href="https://ensia.edu.dz/">
                     <Logo />
                 </a>
                 <button className="md:hidden p-2 w-12 z-10" onClick={() => setIsOpen(!isOpen)}>
