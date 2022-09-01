@@ -11,27 +11,27 @@ const cardsInfo: Year[] = [
                 modules: [
                     {
                         name: "Intensive English",
-                        url: "",
+                        url: "https://drive.google.com/drive/folders/1Y_EEJ2lnRCin5OatOnB8mlVJm-9jCP2t?usp=sharing",
                         dropdownValue: "intensive english",
                     },
                     {
                         name: "Critical Thinking and Creative Problem Solving (CPSCT)",
-                        url: "",
+                        url: "https://drive.google.com/drive/folders/1XkijsOG_fqgwpDXsrx0x-stNtwhN-b5v?usp=sharing",
                         dropdownValue: "cpsct",
                     },
                     {
                         name: "Analysis 1",
-                        url: "",
+                        url: "https://drive.google.com/drive/folders/1-TeEhipTbrxluAWTl0U7MUOkwwU2DKkL?usp=sharing",
                         dropdownValue: "analysis 1",
                     },
                     {
                         name: "Algebra 1",
-                        url: "",
+                        url: "https://drive.google.com/drive/folders/13nmhlagnKpsDcByZTyBCWwnhMuG3mSFz?usp=sharing",
                         dropdownValue: "algebra 1",
                     },
                     {
                         name: "Academic Communication 1",
-                        url: "",
+                        url: "https://drive.google.com/drive/folders/103faquNvgVFLOm5G8xvnHNnEQM6vBm_H?usp=sharing",
                         dropdownValue: "academic communication 1",
                     },
                 ],
@@ -41,32 +41,32 @@ const cardsInfo: Year[] = [
                 modules: [
                     {
                         name: "Analysis 2",
-                        url: "",
+                        url: "https://drive.google.com/drive/folders/1SzogkDnnH6FlLGzY41c_B6B8juDAwrxb?usp=sharing",
                         dropdownValue: "analysis 2",
                     },
                     {
                         name: "Introduction to Programming in C++",
-                        url: "",
+                        url: "https://drive.google.com/drive/folders/1GtwSUEvdGVm8PhyvggSAnlC-0WoGzxPX?usp=sharing",
                         dropdownValue: "introduction to programming in C++",
                     },
                     {
                         name: "Academic Communication 2",
-                        url: "",
+                        url: "https://drive.google.com/drive/folders/1SOF3onNXyaD01wrdyXaRpea9Zb4OKTQ_?usp=sharing",
                         dropdownValue: "academic communication 2",
                     },
                     {
                         name: "Linear Algebra",
-                        url: "",
+                        url: "https://drive.google.com/drive/folders/1Y-sOrF6FbLc1eZtyyxFUa9ckak6qICxk?usp=sharing",
                         dropdownValue: "linear algebra",
                     },
                     {
-                        name: "Probabilties and Statistics",
-                        url: "",
+                        name: "Probabilities and Statistics",
+                        url: "https://drive.google.com/drive/folders/1rF_naxPrDvxN0W0yyH7QYvWLFTLil3Zm?usp=sharing",
                         dropdownValue: "probabilities and statistics",
                     },
                     {
                         name: "Object Oriented Programming",
-                        url: "",
+                        url: "https://drive.google.com/drive/folders/1tjeHDwav6Ltfbx0xb6O-79au1TUruX2F?usp=sharing",
                         dropdownValue: "Object Oriented Programming",
                     },
                 ],
