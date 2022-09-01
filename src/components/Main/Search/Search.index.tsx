@@ -155,7 +155,7 @@ const Search = () => {
                     setModule={setModule}
                 />
             )}
-            {(errorMsg || results.files.length !== 0) && (
+            {(errorMsg || results.files.length !== 0 || isLoading) && (
                 <ResultsMenu
                     docRef={docCardRef}
                     handleResultsScroll={handleResultsScroll}
