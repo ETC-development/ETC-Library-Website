@@ -81,29 +81,44 @@ const cardsInfo: Year[] = [
                 title: "Semester 1",
                 modules: [
                     {
-                        name: "Intensive English",
+                        name: "Analysis 3",
                         url: "",
                         dropdownValue: "a",
                     },
                     {
-                        name: "Critical Thinking and Creative Problem Solving (CPSCT)",
+                        name: "Algebra 3",
                         url: "",
                         dropdownValue: "b",
                     },
                     {
-                        name: "Analysis 1",
+                        name: "Machine Structure 1",
                         url: "",
                         dropdownValue: "c",
                     },
                     {
-                        name: "Algebra 1",
+                        name: "Computer Architecture",
                         url: "",
                         dropdownValue: "d",
                     },
                     {
-                        name: "Academic Communication 1",
+                        name: "Statistics",
                         url: "",
                         dropdownValue: "MM",
+                    },
+                    {
+                        name: "Probabilities",
+                        url: "",
+                        dropdownValue: "MMf",
+                    },
+                    {
+                        name: "Data Structures",
+                        url: "",
+                        dropdownValue: "MdM",
+                    },
+                    {
+                        name: "Graph Theory",
+                        url: "",
+                        dropdownValue: "MaM",
                     },
                 ],
             },
@@ -111,34 +126,44 @@ const cardsInfo: Year[] = [
                 title: "Semester 2",
                 modules: [
                     {
-                        name: "Analysis 2",
+                        name: "Analysis 4",
                         url: "",
                         dropdownValue: "f",
                     },
                     {
-                        name: "Introduction to Programming in C++",
+                        name: "Algebra 4",
                         url: "",
                         dropdownValue: "e",
                     },
                     {
-                        name: "Academic Communication 2",
+                        name: "Machine Structure 2",
                         url: "",
                         dropdownValue: "j",
                     },
                     {
-                        name: "Linear Algebra",
+                        name: "Databases",
                         url: "",
                         dropdownValue: "k",
                     },
                     {
-                        name: "Probabilties and Statistics",
+                        name: "Operating Systems",
                         url: "",
                         dropdownValue: "l",
                     },
                     {
-                        name: "Object Oriented Programming",
+                        name: "Software Engineering",
                         url: "",
                         dropdownValue: "m",
+                    },
+                    {
+                        name: "Introduction to AI",
+                        url: "",
+                        dropdownValue: "azazazm",
+                    },
+                    {
+                        name: "Introduction to Business",
+                        url: "",
+                        dropdownValue: "mzza",
                     },
                 ],
             },
