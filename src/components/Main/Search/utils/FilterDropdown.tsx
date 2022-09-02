@@ -17,7 +17,7 @@ const FilterDropdown: FunctionComponent<FilterDropdownProps> = ({
                 name={type}
                 onChange={(e) => onDropdownChange(e)}
                 value={value}
-                className={"border-0 bg-transparent w-full cursor-pointer py-1.5 outline-0"}
+                className={"border-0 bg-dark-bg w-full cursor-pointer py-1.5 outline-0"}
             >
                 <option value={""}>{type} (All)</option>
                 {selections.map((selection) => (
