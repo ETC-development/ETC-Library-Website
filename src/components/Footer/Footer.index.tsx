@@ -31,7 +31,7 @@ const Footer = () => {
                 <h1 className="text-3xl lg:text-4xl text-light-text tracking-widest font-semibold">
                     Contribute
                 </h1>
-                <div className="w-full font-medium my-12 lg:px-[13%] flex flex-col lg:flex-row items-center lg:items-start justify-evenly lg:justify-around">
+                <div className="w-full font-medium my-12 flex flex-col lg:flex-row items-center justify-center">
                     <Contribution
                         illustration={Computer}
                         buttonIcon={faGithub}

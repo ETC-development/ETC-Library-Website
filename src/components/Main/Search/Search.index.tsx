@@ -138,18 +138,15 @@ const Search = () => {
             <TitleSubtitle
                 title={"Search"}
                 subtitle={
-                    // <p>
-                    //     Find what you need faster and efficiently either by
-                    //     <br /> Writing
-                    //     <span className={"text-secondary font-normal"}> file names </span>
-                    //     <span> in the search bar, or by selecting the needed </span>
-                    //     <span className={"text-secondary font-normal"}>file categories</span>
-                    // </p>
                     <p>
                         Find what you need faster and efficiently either by
                         <br /> Writing
                         <span className={"text-secondary font-normal"}> file names </span>
-                        <span> in the search bar, or by selecting the needed </span>
+                        <span>
+                            {" "}
+                            in the search bar, <br className={"md:invisible"} /> or by selecting the
+                            needed{" "}
+                        </span>
                         <span className={"text-secondary font-normal"}>file categories</span>
                     </p>
                 }

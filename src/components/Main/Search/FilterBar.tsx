@@ -114,7 +114,7 @@ const FilterBar: FunctionComponent<FilterBarProps> = memo(
             >
                 <div
                     className={
-                        "flex md:items-center flex-col justify-center md:justify-start md:flex-row"
+                        "flex md:items-center flex-col justify-center md:justify-start lg:flex-row"
                     }
                 >
                     <div className={"mr-2 my-2 md:my-0 text-center"}>

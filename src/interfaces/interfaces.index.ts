@@ -58,7 +58,6 @@ export interface SearchResponse {
     error?: string;
 }
 
-
 export interface FetchFunction {
     (filters: SearchRequestQuery): Promise<{
         data?: SearchResponse;

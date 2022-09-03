@@ -1,7 +1,7 @@
 #main-menu li:last-child {
-    @apply border-2 border-solid rounded-xl border-secondary p-2 hover:bg-[#31416e] mr-0
+    @apply border-2 border-solid rounded-xl border-secondary p-2 hover:bg-[#31416e] mr-0;
 }
 
 #main-menu li:last-child a {
-    @apply border-0
+    @apply border-0;
 }
