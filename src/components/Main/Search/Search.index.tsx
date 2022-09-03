@@ -141,13 +141,13 @@ const Search = () => {
                     <p>
                         Find what you need faster and efficiently either by
                         <br /> Writing
-                        <span className={"text-secondary font-normal"}> file names </span>
+                        <span className={"text-secondary font-normal"}> File Names </span>
                         <span>
                             {" "}
-                            in the search bar, <br className={"md:invisible"} /> or by selecting the
-                            needed{" "}
+                            in the search bar, <span className={"lg:invisible block"}></span> or by
+                            Selecting the needed{" "}
                         </span>
-                        <span className={"text-secondary font-normal"}>file categories</span>
+                        <span className={"text-secondary font-normal"}>File Categories</span>
                     </p>
                 }
             />
