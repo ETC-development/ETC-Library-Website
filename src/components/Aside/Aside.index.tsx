@@ -21,7 +21,7 @@ const Aside: FunctionComponent<AsideProps> = ({ isOpen, setIsOpen }) => {
                 layout
                 className={`aside flex justify-center md:hidden w-full bg-dark-bg pb-6 z-10`}
             >
-                <ul className={`list items-center w-10/12 text-white flex flex-col`}>
+                <ul className={`list items-center w-full text-white flex flex-col`}>
                     {links.map((link) => {
                         return (
                             <a

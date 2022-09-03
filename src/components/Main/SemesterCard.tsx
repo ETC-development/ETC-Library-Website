@@ -12,7 +12,7 @@ const SemesterCard: FunctionComponent<SemesterCardProps> = ({ semester }) => {
                 <p className="text-[18px] lg:text-md">{semester.title}</p>
             </div>
 
-            <div className="cardContentButtom p-6 flex flex-col">
+            <div className="cardContentButtom p-4 flex flex-col">
                 {semester.modules.map((m) => (
                     <li key={m.dropdownValue} className="module">
                         <a href={m.url}>{m.name}</a>

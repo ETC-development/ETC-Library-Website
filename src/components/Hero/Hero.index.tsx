@@ -11,7 +11,7 @@ const Hero = () => {
     return (
         <section id={"home"} className="flex flex-col pt-20 bg-dark-bg text-light-text font-sans">
             {/* Illustration + Paragraph */}
-            <div className="bg-dark-bg lg:min-h-[calc(100vh-300px)] w-full flex-grow-0 flex-shrink flex flex-no-wrap flex-col-reverse justify-center content-center px-2 lg:flex-row lg:justify-around lg:px-10">
+            <div className="bg-dark-bg lg:min-h-[calc(100vh-300px)] w-full flex-grow-0 flex-shrink flex flex-no-wrap flex-col-reverse justify-center content-center px-2 lg:flex-row lg:justify-between lg:px-36">
                 {/* Paragraphs */}
                 <div className="flex flex-shrink flex-col text-center lg:text-left gap-4 justify-center content-center">
                     <h1 className="hero-h1">

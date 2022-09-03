@@ -3,5 +3,5 @@
 }
 
 .social-icon * {
-    @apply text-3xl text-violet;
+    @apply text-2xl text-violet;
 }

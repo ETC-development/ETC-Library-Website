@@ -12,7 +12,7 @@ export default function NavBar() {
 
     return (
         <nav className={"w-full fixed z-10 top-0"}>
-            <motion.div className="bg-dark-bg flex justify-between items-center px-3 py-1 md:py-2.5 md:px-5">
+            <motion.div className="bg-dark-bg flex justify-between items-center px-12 py-1 md:py-2.5 lg:px-36">
                 <a className={"w-2"} href="https://ensia.edu.dz/">
                     <Logo />
                 </a>

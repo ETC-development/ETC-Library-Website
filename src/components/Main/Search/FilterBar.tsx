@@ -1,7 +1,6 @@
 import FilterDropdown from "./utils/FilterDropdown";
 import { Dispatch, FunctionComponent, memo, SetStateAction, useEffect, useState } from "react";
 import { FilterDropdownProps } from "interfaces/interfaces.index";
-import { AnimatePresence, motion } from "framer-motion";
 
 import modulesArr from "utils/modules";
 
@@ -108,41 +107,41 @@ const FilterBar: FunctionComponent<FilterBarProps> = memo(
         }, [setModule]);
 
         return (
-            <AnimatePresence>
-                <motion.div
-                    initial={{ opacity: 0, scaleY: 0, y: -100 }}
-                    animate={{ opacity: 1, scaleY: 1, y: 0 }}
-                    exit={{ opacity: 0, scaleY: 0 }}
-                    transition={{ type: "tween" }}
+            <div
+                className={
+                    "w-full my-2 lg:w-200 py-2 px-5 bg-white shadow-md rounded-xl text-dark-text"
+                }
+            >
+                <div
                     className={
-                        "w-full my-2 lg:w-200 py-2 px-5 bg-white shadow-md rounded-xl text-dark-text"
+                        "flex md:items-center flex-col justify-center md:justify-start md:flex-row"
                     }
                 >
-                    <div className={"flex md:items-center gap-2 "}>
-                        <div>Filters:</div>
-                        <div className={"flex flex-col md:flex-row gap-2 w-full"}>
-                            <FilterDropdown
-                                value={level}
-                                onDropdownChange={onSelectionChange}
-                                type={"level"}
-                                selections={levels}
-                            />
-                            <FilterDropdown
-                                value={module}
-                                onDropdownChange={onSelectionChange}
-                                type={"module"}
-                                selections={modules}
-                            />
-                            <FilterDropdown
-                                value={docType}
-                                onDropdownChange={onSelectionChange}
-                                type={"type"}
-                                selections={docTypes}
-                            />
-                        </div>
+                    <div className={"mr-2 my-2 md:my-0 text-center"}>
+                        Search for files by <span className={"font-semibold"}>categories:</span>
                     </div>
-                </motion.div>
-            </AnimatePresence>
+                    <div className={"flex flex-col md:flex-row"}>
+                        <FilterDropdown
+                            value={level}
+                            onDropdownChange={onSelectionChange}
+                            type={"level"}
+                            selections={levels}
+                        />
+                        <FilterDropdown
+                            value={module}
+                            onDropdownChange={onSelectionChange}
+                            type={"module"}
+                            selections={modules}
+                        />
+                        <FilterDropdown
+                            value={docType}
+                            onDropdownChange={onSelectionChange}
+                            type={"type"}
+                            selections={docTypes}
+                        />
+                    </div>
+                </div>
+            </div>
         );
     }
 );

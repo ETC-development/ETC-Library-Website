@@ -2,8 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="475514c4-872f-4531-a62f-ee7fa806c055" name="Changes" comment="Add correct href link and make typescript a dev dependency">
-      <change beforePath="$PROJECT_DIR$/public/design.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/hero1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/problem.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/problem1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Aside/Aside.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Aside/Aside.index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/Contribution.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Contribution.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/Main.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Main.index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/Search/FilterBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Search/FilterBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/Search/Search.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Search/Search.index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/Search/SearchBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Search/SearchBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/Search/utils/CardFilterTag.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Search/utils/CardFilterTag.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/Search/utils/FilterDropdown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Search/utils/FilterDropdown.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/SemesterCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/SemesterCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/TitleSubtitle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/TitleSubtitle.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavBar/NavBar.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/NavBar.index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,7 +29,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="animations" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -84,6 +100,7 @@
       <workItem from="1661900386204" duration="18000" />
       <workItem from="1661900413618" duration="5718000" />
       <workItem from="1661955469838" duration="14817000" />
+      <workItem from="1662208139090" duration="20944000" />
     </task>
     <task id="LOCAL-00001" summary="enable absolute path import">
       <created>1660580584077</created>

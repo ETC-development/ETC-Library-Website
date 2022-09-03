@@ -9,6 +9,13 @@ import TitleSubtitle from "../TitleSubtitle";
 
 const limit = 20;
 
+const defaultResults = {
+    files: [],
+    totalFilesCount: 0,
+    totalPages: 0,
+    currentPage: 1,
+};
+
 const Search = () => {
     //search query state
     const [searchQuery, setSearchQuery] = useState<string>("");
@@ -18,8 +25,6 @@ const Search = () => {
     // typing their query in the searchbar input
     // and when debouncedSearch's value changes, it will trigger the useEffect hook below which calls the fetch function
     const debouncedSearch = useDebounce(searchQuery, 400);
-
-    const [isFilterOpen, setIsFilterOpen] = useState<boolean>(false);
 
     //states for the filter selections
     const [level, setLevel] = useState<string>("");
@@ -33,12 +38,7 @@ const Search = () => {
     const [errorMsg, setErrorMsg] = useState("");
 
     //state for search results
-    const [results, setResults] = useState<SearchResponse>({
-        files: [],
-        totalFilesCount: 0,
-        totalPages: 0,
-        currentPage: 1,
-    });
+    const [results, setResults] = useState<SearchResponse>(defaultResults);
 
     const [isTimeToLoadMore, setIsTimeToLoadMore] = useState(false);
 
@@ -115,14 +115,18 @@ const Search = () => {
                         setResults(res.data);
                     } else if (res.errorMsg) {
                         setErrorMsg(res.errorMsg);
+                        setResults(defaultResults);
                     }
                     setIsLoading(false);
                 })
                 .catch((e: any) => {
                     setIsLoading(false);
                     setErrorMsg("Unknown Error has occurred !");
+                    setResults(defaultResults);
                     console.log(e);
                 });
+        } else {
+            setResults(defaultResults);
         }
     }, [debouncedSearch, module, docType, level]);
 
@@ -134,18 +138,24 @@ const Search = () => {
             <TitleSubtitle
                 title={"Search"}
                 subtitle={
-                    "Find what you need faster and efficiently using either file names or specific filters"
+                    // <p>
+                    //     Find what you need faster and efficiently either by
+                    //     <br /> Writing
+                    //     <span className={"text-secondary font-normal"}> file names </span>
+                    //     <span> in the search bar, or by selecting the needed </span>
+                    //     <span className={"text-secondary font-normal"}>file categories</span>
+                    // </p>
+                    <p>
+                        Find what you need faster and efficiently either by
+                        <br /> Writing
+                        <span className={"text-secondary font-normal"}> file names </span>
+                        <span> in the search bar, or by selecting the needed </span>
+                        <span className={"text-secondary font-normal"}>file categories</span>
+                    </p>
                 }
             />
-            <SearchBar
-                isFilterOpen={isFilterOpen}
-                query={searchQuery}
-                onInputChange={(e) => setSearchQuery(e.target.value)}
-                onFilterClick={() => {
-                    setIsFilterOpen(!isFilterOpen);
-                }}
-            />
-            {isFilterOpen && (
+            <SearchBar query={searchQuery} onInputChange={(e) => setSearchQuery(e.target.value)} />
+            {
                 <FilterBar
                     level={level}
                     module={module}
@@ -154,7 +164,7 @@ const Search = () => {
                     setLevel={setLevel}
                     setModule={setModule}
                 />
-            )}
+            }
             {(errorMsg || results.files.length !== 0 || isLoading) && (
                 <ResultsMenu
                     docRef={docCardRef}

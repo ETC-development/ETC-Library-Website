@@ -9,17 +9,17 @@ const FilterDropdown: FunctionComponent<FilterDropdownProps> = ({
 }) => {
     return (
         <div
-            className={
-                "w-full flex justify-center items-center md:w-3/12 text-light-text  text-sm bg-dark-bg rounded-xl px-2"
-            }
+            className={`w-full flex justify-center items-center md:w-56 m-1 bg-dark-bg text-light-text text-sm rounded-xl px-2`}
         >
             <select
                 name={type}
                 onChange={(e) => onDropdownChange(e)}
                 value={value}
-                className={"border-0 bg-dark-bg w-full cursor-pointer py-1.5 outline-0"}
+                className={
+                    "border-0 rounded-xl w-full bg-dark-bg font-medium cursor-pointer py-1.5 outline-0"
+                }
             >
-                <option value={""}>{type} (All)</option>
+                <option value={""}>choose {type} (All)</option>
                 {selections.map((selection) => (
                     <option key={selection.value} value={selection.value}>
                         {selection.label}

@@ -1,8 +1,8 @@
-import { FunctionComponent } from "react";
+import { FunctionComponent, ReactNode } from "react";
 
 interface TitleSubtitleProps {
     title: string;
-    subtitle: string;
+    subtitle: ReactNode;
 }
 
 const TitleSubtitle: FunctionComponent<TitleSubtitleProps> = ({ subtitle, title }) => {
