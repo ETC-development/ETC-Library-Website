@@ -14,8 +14,14 @@ const Contribution: FunctionComponent<ContributionProps> = ({
     buttonText,
 }) => {
     return (
-        <div className={"lg:h-48 mx-[3%] lg:flex lg:flex-col lg:justify-around"}>
-            <img height={150} src={illustration} alt={buttonText} className="hidden lg:inline" />
+        <div className={"lg:h-48 mx-[3%] lg:flex lg:flex-col lg:justify-around lg:items-center"}>
+            <img
+                height={150}
+                width={150}
+                src={illustration}
+                alt={buttonText}
+                className="hidden lg:inline"
+            />
             <a
                 href="https://github.com/ETC-development/ETC-Library-Website"
                 className="flex w-64 justify-center content-center px-5 py-2 my-2 lg:my-4 border-2 text-light-text rounded-xl border-violet"

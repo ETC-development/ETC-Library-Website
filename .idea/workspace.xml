@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="475514c4-872f-4531-a62f-ee7fa806c055" name="Changes" comment="Major UI/UX improvements">
+    <list default="true" id="475514c4-872f-4531-a62f-ee7fa806c055" name="Changes" comment="Fix line break appearing on large screens">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Aside/Aside.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Aside/Aside.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Footer/Contribution.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Contribution.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/Search/FilterBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Search/FilterBar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/Search/Search.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Search/Search.index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavBar/NavBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/NavBar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavBar/NavBar.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/NavBar.index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces/interfaces.index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/interfaces.index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +84,7 @@
       <workItem from="1661900386204" duration="18000" />
       <workItem from="1661900413618" duration="5718000" />
       <workItem from="1661955469838" duration="14817000" />
-      <workItem from="1662208139090" duration="23483000" />
+      <workItem from="1662208139090" duration="24960000" />
     </task>
     <task id="LOCAL-00001" summary="enable absolute path import">
       <created>1660580584077</created>
@@ -352,7 +345,21 @@
       <option name="project" value="LOCAL" />
       <updated>1662243856454</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Few UI/UX improvements">
+      <created>1662246543060</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1662246543060</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Fix line break appearing on large screens">
+      <created>1662246885228</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1662246885228</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -371,8 +378,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Code formatting" />
-    <MESSAGE value="add yarn.lock" />
     <MESSAGE value="add boilerplates for hero and main" />
     <MESSAGE value="crop to fit content" />
     <MESSAGE value="Minor style adjustments and corrections" />
@@ -396,6 +401,8 @@
     <MESSAGE value="Overall adjustments and improvements" />
     <MESSAGE value="Add correct href link and make typescript a dev dependency" />
     <MESSAGE value="Major UI/UX improvements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Major UI/UX improvements" />
+    <MESSAGE value="Few UI/UX improvements" />
+    <MESSAGE value="Fix line break appearing on large screens" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix line break appearing on large screens" />
   </component>
 </project>
