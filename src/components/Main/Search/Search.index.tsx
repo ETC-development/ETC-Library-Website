@@ -18,8 +18,10 @@ const defaultResults = {
 
 const errorOfSearch = (
     <p>
-        <div>No document name was found to match your search term, please make sure to:</div>
-        <ul className={"text-left"}>
+        <div className={"text-left p-1"}>
+            No document name was found to match your search term, please make sure to:
+        </div>
+        <ul className={"text-left px-4"}>
             <li className={"list-disc"}>
                 Write a <span className={"text-secondary"}>Name of a Document</span> in the search
                 bar instead of a <span className={"text-secondary"}>Module Name.</span>

@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="475514c4-872f-4531-a62f-ee7fa806c055" name="Changes" comment="this time actually fixed line break appearing in desktop">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/Search/ResultsMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Search/ResultsMenu.tsx" afterDir="false" />
+    <list default="true" id="475514c4-872f-4531-a62f-ee7fa806c055" name="Changes" comment="Add clearer error msgs for search">
       <change beforePath="$PROJECT_DIR$/src/components/Main/Search/Search.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Search/Search.index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/Search/utils/SearchError.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Search/utils/SearchError.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces/interfaces.index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/interfaces.index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/fetchFunction.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/fetchFunction.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +83,7 @@
       <workItem from="1661900386204" duration="18000" />
       <workItem from="1661900413618" duration="5718000" />
       <workItem from="1661955469838" duration="14817000" />
-      <workItem from="1662208139090" duration="28678000" />
+      <workItem from="1662208139090" duration="29051000" />
     </task>
     <task id="LOCAL-00001" summary="enable absolute path import">
       <created>1660580584077</created>
@@ -377,7 +372,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662296625043</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Add clearer error msgs for search">
+      <created>1662299269949</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1662299269949</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -396,7 +398,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Minor style adjustments and corrections" />
     <MESSAGE value="Add prettier" />
     <MESSAGE value="Add WebStorm config files" />
     <MESSAGE value="Put Hero, Main and Footer together" />
@@ -421,6 +422,7 @@
     <MESSAGE value="Fix line break appearing on large screens" />
     <MESSAGE value="Fix footer illustrations being too large on chromium browsers" />
     <MESSAGE value="this time actually fixed line break appearing in desktop" />
-    <option name="LAST_COMMIT_MESSAGE" value="this time actually fixed line break appearing in desktop" />
+    <MESSAGE value="Add clearer error msgs for search" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add clearer error msgs for search" />
   </component>
 </project>
