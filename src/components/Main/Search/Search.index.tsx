@@ -144,7 +144,7 @@ const Search = () => {
                         <span className={"text-secondary font-normal"}> File Names </span>
                         <span>
                             {" "}
-                            in the search bar, <span className={"lg:invisible block"}></span> or by
+                            in the search bar, <span className={"lg:hidden block"}></span> or by
                             Selecting the needed{" "}
                         </span>
                         <span className={"text-secondary font-normal"}>File Categories</span>
