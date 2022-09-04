@@ -16,12 +16,12 @@ const fetchFunction: FetchFunction = async (filters) => {
         const data: SearchResponse = await res.json();
 
         if (res.status === 200) {
-            return { data };
+            return { data, status: res.status };
         } else if (res.status === 400) {
-            return { errorMsg: data.error };
+            return { errorMsg: data.error, status: res.status };
             //We couldn't find any files with the provided information. Please try using filters to find what you're looking for
         } else {
-            return { errorMsg: "Unknown error has occurred !" };
+            return { errorMsg: "Unknown error has occurred !", status: res.status };
         }
     } catch (e) {
         console.log(e);

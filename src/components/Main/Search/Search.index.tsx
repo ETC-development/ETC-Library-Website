@@ -1,5 +1,5 @@
 import SearchBar from "./SearchBar";
-import { UIEventHandler, useEffect, useRef, useState } from "react";
+import { ReactNode, UIEventHandler, useEffect, useRef, useState } from "react";
 import ResultsMenu from "./ResultsMenu";
 import FilterBar from "./FilterBar";
 import { SearchResponse } from "interfaces/interfaces.index";
@@ -15,6 +15,44 @@ const defaultResults = {
     totalPages: 0,
     currentPage: 1,
 };
+
+const errorOfSearch = (
+    <p>
+        <div>No document name was found to match your search term, please make sure to:</div>
+        <ul className={"text-left"}>
+            <li className={"list-disc"}>
+                Write a <span className={"text-secondary"}>Name of a Document</span> in the search
+                bar instead of a <span className={"text-secondary"}>Module Name.</span>
+            </li>
+            <li className={"list-disc"}>
+                Use the <span className={"text-secondary"}>Search by Categories</span> feature below
+                to find files related to a specific Module or Level or Type.
+            </li>
+            <li className={"list-disc"}>
+                Clear the search input text if you are searching by categories.
+            </li>
+        </ul>
+    </p>
+);
+
+const errorOfFilterWithDocType = (
+    <p>
+        <div>No documents were found using the provided category options, please try to:</div>
+        <ul>
+            <li className={"list-disc"}>
+                Set <span className={"text-secondary"}>Type</span> option to{" "}
+                <span className={"text-secondary"}>All</span> since some modules don't have some
+                categories
+            </li>
+        </ul>
+    </p>
+);
+
+const errorOfFilter = (
+    <p>
+        <div>No documents were found using the provided Category Options</div>
+    </p>
+);
 
 const Search = () => {
     //search query state
@@ -35,7 +73,7 @@ const Search = () => {
     const [isLoading, setIsLoading] = useState(false);
 
     //error state, to indicate error msg when search is done (for example "files not found")
-    const [errorMsg, setErrorMsg] = useState("");
+    const [errorMsg, setErrorMsg] = useState<ReactNode>(null);
 
     //state for search results
     const [results, setResults] = useState<SearchResponse>(defaultResults);
@@ -101,7 +139,7 @@ const Search = () => {
     useEffect(() => {
         if (debouncedSearch || module || docType || level) {
             setIsLoading(true);
-            setErrorMsg("");
+            setErrorMsg(null);
             fetchFunction({
                 module,
                 limit,
@@ -110,11 +148,19 @@ const Search = () => {
                 year: level,
                 name: debouncedSearch,
             })
-                .then((res: { data?: SearchResponse; errorMsg?: string }) => {
+                .then((res: { data?: SearchResponse; errorMsg?: string; status?: number }) => {
                     if (res.data) {
                         setResults(res.data);
-                    } else if (res.errorMsg) {
-                        setErrorMsg(res.errorMsg);
+                    } else if (res.errorMsg && res.status === 400) {
+                        if (debouncedSearch) {
+                            setErrorMsg(errorOfSearch);
+                        } else {
+                            if (docType) {
+                                setErrorMsg(errorOfFilterWithDocType);
+                            } else {
+                                setErrorMsg(errorOfFilter);
+                            }
+                        }
                         setResults(defaultResults);
                     }
                     setIsLoading(false);

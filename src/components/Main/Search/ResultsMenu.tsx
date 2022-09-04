@@ -1,4 +1,4 @@
-import { FunctionComponent, memo, RefObject, UIEventHandler } from "react";
+import { FunctionComponent, memo, ReactNode, RefObject, UIEventHandler } from "react";
 import { SearchResponse } from "interfaces/interfaces.index";
 import DocumentCard from "./utils/DocumentCard";
 import { AnimatePresence, motion } from "framer-motion";
@@ -8,7 +8,7 @@ import SearchError from "./utils/SearchError";
 interface ResultsMenuProps {
     results: SearchResponse;
     isLoading: boolean;
-    errorMsg: string;
+    errorMsg: ReactNode;
     handleResultsScroll: UIEventHandler<HTMLDivElement>;
     docRef: RefObject<HTMLAnchorElement>;
 }

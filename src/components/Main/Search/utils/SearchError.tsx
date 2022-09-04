@@ -1,8 +1,8 @@
 import { ReactComponent as NotFound } from "assets/searching33.svg";
-import { FunctionComponent } from "react";
+import { FunctionComponent, ReactNode } from "react";
 
 interface SearchErrorProps {
-    errorMsg: string;
+    errorMsg: ReactNode;
 }
 
 const SearchError: FunctionComponent<SearchErrorProps> = ({ errorMsg }) => {
