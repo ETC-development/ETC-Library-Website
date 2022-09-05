@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="475514c4-872f-4531-a62f-ee7fa806c055" name="Changes" comment="Fix special characters not being encoded in search API request">
+    <list default="true" id="475514c4-872f-4531-a62f-ee7fa806c055" name="Changes" comment="Switch positions of SearchBar and FilterBar + UX improvements">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/Search/ResultsMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Search/ResultsMenu.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Main/Search/Search.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Search/Search.index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/Search/SearchBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Search/SearchBar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/Search/utils/DocumentCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Search/utils/DocumentCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/fetchFunction.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/fetchFunction.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +88,7 @@
       <workItem from="1661955469838" duration="14817000" />
       <workItem from="1662208139090" duration="30427000" />
       <workItem from="1662327440169" duration="409000" />
-      <workItem from="1662373329250" duration="9093000" />
+      <workItem from="1662373329250" duration="10219000" />
     </task>
     <task id="LOCAL-00001" summary="enable absolute path import">
       <created>1660580584077</created>
@@ -398,7 +398,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662378756822</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Switch positions of SearchBar and FilterBar + UX improvements">
+      <created>1662391096511</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1662391096511</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -417,7 +424,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Put Hero, Main and Footer together" />
     <MESSAGE value="IDE files" />
     <MESSAGE value="Some adjustments and code formatting" />
     <MESSAGE value="remove duplicate classes" />
@@ -442,6 +448,7 @@
     <MESSAGE value="Add clearer error msgs for search" />
     <MESSAGE value="Adjust error message text alignment" />
     <MESSAGE value="Fix special characters not being encoded in search API request" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix special characters not being encoded in search API request" />
+    <MESSAGE value="Switch positions of SearchBar and FilterBar + UX improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Switch positions of SearchBar and FilterBar + UX improvements" />
   </component>
 </project>

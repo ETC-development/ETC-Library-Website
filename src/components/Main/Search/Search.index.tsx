@@ -85,6 +85,9 @@ const Search = () => {
     // reference to the DocumentCard element, will use it to get card height, to use for calculating scroll position
     const docCardRef = useRef<HTMLAnchorElement>(null);
 
+    // a reference to the results' menu, we'll use it to scroll to results menu when results are found
+    const resultsMenuRef = useRef<HTMLDivElement>(null);
+
     /**
      * A function that triggers whenever the user scrolls the search result div, and based on the scroll position, it sets isTimeToLoad state which triggers a side effect to load more docs
      * */
@@ -152,6 +155,7 @@ const Search = () => {
             })
                 .then((res: { data?: SearchResponse; errorMsg?: string; status?: number }) => {
                     if (res.data) {
+                        //setting the results state with the received data
                         setResults(res.data);
                     } else if (res.errorMsg && res.status === 400) {
                         if (debouncedSearch) {
@@ -166,11 +170,21 @@ const Search = () => {
                         setResults(defaultResults);
                     }
                     setIsLoading(false);
+
+                    //if resultsMenu ref is defined, we smoothly scroll to that menu
+                    if (resultsMenuRef.current) {
+                        resultsMenuRef.current.scrollIntoView({ behavior: "smooth" });
+                    }
                 })
                 .catch((e: any) => {
                     setIsLoading(false);
                     setErrorMsg("Unknown Error has occurred !");
                     setResults(defaultResults);
+
+                    //if resultsMenu ref is defined, we smoothly scroll to that menu
+                    if (resultsMenuRef.current) {
+                        resultsMenuRef.current.scrollIntoView({ behavior: "smooth" });
+                    }
                     console.log(e);
                 });
         } else {
@@ -210,6 +224,7 @@ const Search = () => {
 
             {(errorMsg || results.files.length !== 0 || isLoading) && (
                 <ResultsMenu
+                    resultsMenuRef={resultsMenuRef}
                     docRef={docCardRef}
                     handleResultsScroll={handleResultsScroll}
                     results={results}

@@ -11,10 +11,11 @@ interface ResultsMenuProps {
     errorMsg: ReactNode;
     handleResultsScroll: UIEventHandler<HTMLDivElement>;
     docRef: RefObject<HTMLAnchorElement>;
+    resultsMenuRef: RefObject<HTMLDivElement>;
 }
 
 const ResultsMenu: FunctionComponent<ResultsMenuProps> = memo(
-    ({ results, isLoading, errorMsg, handleResultsScroll, docRef }) => {
+    ({ results, isLoading, errorMsg, handleResultsScroll, docRef, resultsMenuRef }) => {
         const renderCards = () => {
             return results.files.map((doc, i) => {
                 return (
@@ -35,10 +36,11 @@ const ResultsMenu: FunctionComponent<ResultsMenuProps> = memo(
         return (
             <AnimatePresence>
                 <motion.div
+                    ref={resultsMenuRef}
                     initial={{ opacity: 0, y: -100 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, scaleY: 0 }}
-                    className="search-menu my-2 flex flex-col w-full max-w-full max-h-96 md:max-h-100 lg:w-200 mx-auto bg-white rounded-xl shadow-md"
+                    className="scroll-mt-52 md:scroll-mt-72 my-2 flex flex-col w-full max-w-full max-h-96 md:max-h-100 lg:w-200 mx-auto bg-white rounded-xl shadow-md"
                 >
                     <div
                         onScroll={handleResultsScroll}
