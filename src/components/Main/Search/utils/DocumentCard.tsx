@@ -26,7 +26,7 @@ const DocumentCard: FunctionComponent<DocumentCardProps> = ({
                 href={`https://drive.google.com/file/d/${doc.url}/view`}
                 target={"_blank"}
                 className={
-                    "doc-card flex flex-grow w-full hover:bg-light-bg items-center hover:border-violet rounded-2xl my-2"
+                    "doc-card flex flex-grow w-full hover:bg-light-bg items-center hover:border-violet rounded-xl my-2"
                 }
             >
                 <div

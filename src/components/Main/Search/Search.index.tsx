@@ -186,30 +186,28 @@ const Search = () => {
             <TitleSubtitle
                 title={"Search"}
                 subtitle={
-                    <p>
-                        Find what you need faster and efficiently either by
-                        <br /> Writing
-                        <span className={"text-secondary font-normal"}> File Names </span>
-                        <span>
-                            {" "}
-                            in the search bar, <span className={"lg:hidden block"}></span> or by
-                            Selecting the needed{" "}
-                        </span>
+                    <div>
+                        Find what you need faster and efficiently
+                        <br />
+                        <span className={"lg:hidden block"}></span>
+                        <span>by Selecting the needed </span>
                         <span className={"text-secondary font-normal"}>File Categories</span>
-                    </p>
+                        <span>, or Writing</span>
+                        <span className={"text-secondary font-normal"}> File Names </span>
+                        <span> in the search bar. </span>
+                    </div>
                 }
             />
+            <FilterBar
+                level={level}
+                module={module}
+                docType={docType}
+                setDocType={setDocType}
+                setLevel={setLevel}
+                setModule={setModule}
+            />
             <SearchBar query={searchQuery} onInputChange={(e) => setSearchQuery(e.target.value)} />
-            {
-                <FilterBar
-                    level={level}
-                    module={module}
-                    docType={docType}
-                    setDocType={setDocType}
-                    setLevel={setLevel}
-                    setModule={setModule}
-                />
-            }
+
             {(errorMsg || results.files.length !== 0 || isLoading) && (
                 <ResultsMenu
                     docRef={docCardRef}
