@@ -1,4 +1,4 @@
-import { ReactComponent as NotFound } from "assets/searching33.svg";
+import { ReactComponent as NotFound } from "assets/searchError.svg";
 import { FunctionComponent, ReactNode } from "react";
 
 interface SearchErrorProps {

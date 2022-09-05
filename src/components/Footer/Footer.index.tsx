@@ -3,7 +3,7 @@ import "./Footer.css";
 // importing main pictures of the footer
 import Computer from "assets/computer.svg";
 import Math from "assets/math.svg";
-import Issue from "assets/problem1.svg";
+import Issue from "assets/problem.svg";
 
 import Logo from "assets/ETC Logo.webp";
 
