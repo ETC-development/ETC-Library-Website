@@ -142,9 +142,15 @@ const Search = () => {
 
     // handling side effects related to changing search queries by fetching new docs based on the changes
     useEffect(() => {
+        // we'll only fetch when at least one of these params are not empty
         if (debouncedSearch || module || docType || level) {
+            // starting loading spinner
             setIsLoading(true);
+
+            // removing error message of it exists
             setErrorMsg(null);
+
+            // we run the fetch function with the new params
             fetchFunction({
                 module,
                 limit,
@@ -153,22 +159,37 @@ const Search = () => {
                 year: level,
                 name: debouncedSearch,
             })
+                //handling the resolved promise, we receive possibly 3 params, data object, error msg and/or response status
                 .then((res: { data?: SearchResponse; errorMsg?: string; status?: number }) => {
+                    // when there is data (means the fetch was successful
                     if (res.data) {
                         //setting the results state with the received data
                         setResults(res.data);
+
+                        //when there is an error, and it is a "bad request" error (status 400)
                     } else if (res.errorMsg && res.status === 400) {
+                        // Here we'll show errors based on the status of the search/filter params that the user has set
+
+                        // if there is text written in the searchBar, we write the errorOfSearch errorMsg to the ser
                         if (debouncedSearch) {
                             setErrorMsg(errorOfSearch);
                         } else {
+                            // When search is empty (means the user only used categorical search)
+
+                            // if the user had set the docType, we advise them to set it to All for the hope of getting results
                             if (docType) {
                                 setErrorMsg(errorOfFilterWithDocType);
                             } else {
+                                // Otherwise if docType wasn't set, we just tell the user that we couldn't find files with the provided query
                                 setErrorMsg(errorOfFilter);
                             }
                         }
+
+                        // When there is an error, we set the results to a default state object
                         setResults(defaultResults);
                     }
+
+                    // after everything is done, we stop showing the loading spinner
                     setIsLoading(false);
 
                     //if resultsMenu ref is defined, we smoothly scroll to that menu
@@ -188,6 +209,7 @@ const Search = () => {
                     console.log(e);
                 });
         } else {
+            // when the user clears the query, we set the results to default status so that the results menu will be hidden
             setResults(defaultResults);
         }
     }, [debouncedSearch, module, docType, level]);
