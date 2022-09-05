@@ -6,6 +6,10 @@ const URL =
         : process.env.REACT_APP_SERVER_URL_DEV || "";
 
 const fetchFunction: FetchFunction = async (filters) => {
+    filters = Object.fromEntries(
+        Object.entries(filters).map(([key, value]) => [key, encodeURIComponent(value)])
+    );
+
     const { name = "", module, year, type, page, limit } = filters;
 
     try {
