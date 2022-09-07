@@ -15,7 +15,7 @@ const SemesterCard: FunctionComponent<SemesterCardProps> = ({ semester }) => {
             <div className="cardContentButtom p-4 flex flex-col">
                 {semester.modules.map((m) => (
                     <li key={m.dropdownValue} className="module">
-                        <a href={m.url} target={"_blank"}>
+                        <a href={m.url} rel={"noreferrer"} target={"_blank"}>
                             {m.name}
                         </a>
                     </li>

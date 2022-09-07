@@ -26,6 +26,7 @@ const Contribution: FunctionComponent<ContributionProps> = ({
             />
             <a
                 href={link}
+                rel="noreferrer"
                 target={"_blank"}
                 className="flex w-64 justify-center content-center px-5 py-2 my-2 lg:my-4 border-2 text-light-text rounded-xl border-violet"
             >

@@ -24,6 +24,7 @@ const DocumentCard: FunctionComponent<DocumentCardProps> = ({
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, scaleY: 0 }}
                 href={`https://drive.google.com/file/d/${doc.url}/view`}
+                rel="noreferrer"
                 target={"_blank"}
                 className={
                     "doc-card flex flex-grow w-full hover:bg-light-bg items-center hover:border-violet rounded-xl my-2"
