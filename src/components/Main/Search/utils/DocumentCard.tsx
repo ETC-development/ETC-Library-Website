@@ -39,12 +39,12 @@ const DocumentCard: FunctionComponent<DocumentCardProps> = ({
                     </div>
                     <div className={"flex items-end justify-between"}>
                         <div className={"filter tags flex flex-wrap gap-2 text-[14px]"}>
-                            <CardFilterTag text={`Preparatory Cycle ${doc.year}`} />
-                            <CardFilterTag text={`Semester ${doc.semester}`} />
-                            <CardFilterTag text={doc.module} />
+                            {doc.year && <CardFilterTag text={`Preparatory Cycle ${doc.year}`} />}
+                            {doc.semester && <CardFilterTag text={`Semester ${doc.semester}`} />}
+                            {doc.module && <CardFilterTag text={doc.module} />}
                             {doc.submodule && <CardFilterTag text={doc.submodule} />}
                             {/* we slice doc.type to remove last character which is an "s" of plural: exams => exam  */}
-                            <CardFilterTag text={doc.type.slice(0, -1)} />
+                            {doc.type && <CardFilterTag text={doc.type.slice(0, -1)} />}
                         </div>
                         <div className={"text-dark-text opacity-50"}>{`${
                             index + 1

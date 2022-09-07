@@ -74,7 +74,7 @@ const FilterBar: FunctionComponent<FilterBarProps> = memo(
         return (
             <div
                 className={
-                    "w-full my-2 lg:w-200 py-2 px-5 bg-white shadow-md rounded-xl text-dark-text"
+                    "w-full my-2 lg:w-200 max-w-full py-2 px-5 bg-white shadow-md rounded-xl text-dark-text"
                 }
             >
                 <div
