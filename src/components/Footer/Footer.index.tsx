@@ -36,18 +36,21 @@ const Footer = () => {
                         illustration={Computer}
                         buttonIcon={faGithub}
                         buttonText={"Contribute on Github"}
+                        link={"https://github.com/ETC-development/ETC-Library-Website"}
                     />
 
                     <Contribution
                         illustration={Issue}
                         buttonIcon={faFeed}
                         buttonText={"Give us your feedback"}
+                        link={"https://forms.gle/hKG5ztqJkk6a2bq76"}
                     />
 
                     <Contribution
                         illustration={Math}
                         buttonIcon={faFileLines}
                         buttonText={"Submit a Document"}
+                        link={"https://forms.gle/g3TQuw6W1vYf3fjz8"}
                     />
                 </div>
                 <div>

@@ -1,20 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="475514c4-872f-4531-a62f-ee7fa806c055" name="Changes" comment="Code and assets clean up">
-      <change afterPath="$PROJECT_DIR$/src/utils/getModulesFromLevel.ts" afterDir="false" />
+    <list default="true" id="475514c4-872f-4531-a62f-ee7fa806c055" name="Changes" comment="Fix filter tag appearing empty when it doesn't exist + Fix filter bar overflow">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/ETC Logo.avif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/hamburger.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/hero1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/problem.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/problem.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/problem1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/searching33.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/searchError.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/xmark.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/Search/FilterBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Search/FilterBar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/Search/Search.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Search/Search.index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/Search/utils/SearchError.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Search/utils/SearchError.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,24 +28,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/salah/programming/web/ETC-Library-Website&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/home/salah/programming/web/ETC-Library-Website/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/home/salah/programming/web/ETC-Library-Website/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/salah/programming/web/ETC-Library-Website",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "nodejs_package_manager_path": "yarn",
+    "prettierjs.PrettierConfiguration.Package": "/home/salah/programming/web/ETC-Library-Website/node_modules/prettier",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "ts.external.directory.path": "/home/salah/programming/web/ETC-Library-Website/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/assets" />
@@ -97,7 +85,9 @@
       <workItem from="1661955469838" duration="14817000" />
       <workItem from="1662208139090" duration="30427000" />
       <workItem from="1662327440169" duration="409000" />
-      <workItem from="1662373329250" duration="12302000" />
+      <workItem from="1662373329250" duration="12941000" />
+      <workItem from="1662564551445" duration="674000" />
+      <workItem from="1662565242811" duration="917000" />
     </task>
     <task id="LOCAL-00001" summary="enable absolute path import">
       <created>1660580584077</created>
@@ -421,7 +411,28 @@
       <option name="project" value="LOCAL" />
       <updated>1662392381942</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Code and assets clean up">
+      <created>1662394547966</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1662394547966</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Code and assets clean up">
+      <created>1662398110273</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1662398110273</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Fix filter tag appearing empty when it doesn't exist + Fix filter bar overflow">
+      <created>1662565276756</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1662565276756</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -440,7 +451,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="remove duplicate classes" />
     <MESSAGE value="use spacing instead of width, to make it usable with everything" />
     <MESSAGE value="provide key prop to list components" />
     <MESSAGE value="Add UI and basic functionality of Search" />
@@ -465,6 +475,7 @@
     <MESSAGE value="Switch positions of SearchBar and FilterBar + UX improvements" />
     <MESSAGE value="Add scroll to results when fetching results" />
     <MESSAGE value="Code and assets clean up" />
-    <option name="LAST_COMMIT_MESSAGE" value="Code and assets clean up" />
+    <MESSAGE value="Fix filter tag appearing empty when it doesn't exist + Fix filter bar overflow" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix filter tag appearing empty when it doesn't exist + Fix filter bar overflow" />
   </component>
 </project>
