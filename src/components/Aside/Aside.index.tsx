@@ -8,7 +8,6 @@ interface AsideProps {
     setIsOpen: Dispatch<SetStateAction<any>>;
 }
 
-//TODO fix SVGs centering
 const Aside: FunctionComponent<AsideProps> = ({ isOpen, setIsOpen }) => {
     return (
         <AnimatePresence>
@@ -21,18 +20,20 @@ const Aside: FunctionComponent<AsideProps> = ({ isOpen, setIsOpen }) => {
                 layout
                 className={`aside flex justify-center md:hidden w-full bg-dark-bg pb-6 z-10`}
             >
-                <ul className={`list items-center w-full text-white flex flex-col`}>
+                <ul
+                    className={`list items-center w-full text-white flex flex-col sm:flex-row justify-center`}
+                >
                     {links.map((link) => {
                         return (
                             <a
                                 key={link.full}
-                                className="list-item px-16 py-2 my-2 rounded-2xl text-center"
+                                className="list-item px-5 py-2 my-2 rounded-2xl text-center"
                                 href={link.link}
                                 onClick={() => {
                                     setIsOpen(!isOpen);
                                 }}
                             >
-                                <span>{link.full}</span>
+                                <span>{link.label}</span>
                             </a>
                         );
                     })}

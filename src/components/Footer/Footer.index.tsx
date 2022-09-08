@@ -23,7 +23,7 @@ import Contribution from "./Contribution";
 
 const Footer = () => {
     return (
-        <footer id={"contribute"} className="w-full font-sans text-light-text">
+        <footer id={"contribute"} className="w-full font-sans text-light-text scroll-mt-24">
             <div className={"rotate-180"}>
                 <Wave />
             </div>

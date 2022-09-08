@@ -134,7 +134,6 @@ const Search = () => {
                     const newData = { ...res.data, files: results.files.concat(res.data.files) };
                     setResults(newData);
                     setIsTimeToLoadMore(false);
-                    console.log("load");
                 }
             })();
         }
@@ -228,7 +227,9 @@ const Search = () => {
                         <span className={"lg:hidden block"}></span>
                         <span>by Selecting the needed </span>
                         <span className={"text-secondary font-normal"}>File Categories</span>
-                        <span>, or Writing</span>
+                        <span>
+                            , <br className={"sm:hidden"} /> or Writing
+                        </span>
                         <span className={"text-secondary font-normal"}> File Names </span>
                         <span> in the search bar. </span>
                     </div>

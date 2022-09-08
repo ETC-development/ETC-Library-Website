@@ -85,25 +85,27 @@ const FilterBar: FunctionComponent<FilterBarProps> = memo(
                     <div className={"mr-2 my-2 md:my-0 text-center"}>
                         Search for files by <span className={"font-semibold"}>categories:</span>
                     </div>
-                    <div className={"flex flex-col md:flex-row"}>
-                        <FilterDropdown
-                            value={level}
-                            onDropdownChange={onSelectionChange}
-                            type={"level"}
-                            selections={levels}
-                        />
-                        <FilterDropdown
-                            value={module}
-                            onDropdownChange={onSelectionChange}
-                            type={"module"}
-                            selections={modules}
-                        />
-                        <FilterDropdown
-                            value={docType}
-                            onDropdownChange={onSelectionChange}
-                            type={"type"}
-                            selections={docTypes}
-                        />
+                    <div className={"flex flex-col md:flex-row justify-center items-center"}>
+                        <div className={"flex flex-col sm:flex-row"}>
+                            <FilterDropdown
+                                value={level}
+                                onDropdownChange={onSelectionChange}
+                                type={"level"}
+                                selections={levels}
+                            />
+                            <FilterDropdown
+                                value={module}
+                                onDropdownChange={onSelectionChange}
+                                type={"module"}
+                                selections={modules}
+                            />
+                            <FilterDropdown
+                                value={docType}
+                                onDropdownChange={onSelectionChange}
+                                type={"type"}
+                                selections={docTypes}
+                            />
+                        </div>
                     </div>
                 </div>
             </div>

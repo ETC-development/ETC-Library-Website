@@ -45,7 +45,7 @@ export default function NavBar() {
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.3 }}
                         onClick={() => setIsOpen(false)}
-                        className={"fixed h-screen w-full bg-[rgba(0,0,0,0.5)] z-[-1]"}
+                        className={"fixed h-full w-full bg-[rgba(0,0,0,0.5)] z-[-1]"}
                     ></motion.div>
                     <Aside isOpen={isOpen} setIsOpen={setIsOpen} />
                 </aside>

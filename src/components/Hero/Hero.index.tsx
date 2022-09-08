@@ -2,24 +2,24 @@ import HeroIllustration from "assets/hero.svg";
 import Typed from "react-typed";
 import "./Hero.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAnglesUp } from "@fortawesome/free-solid-svg-icons";
+import { faAnglesDown } from "@fortawesome/free-solid-svg-icons";
 
 import quotes from "utils/quotes";
 import Wave from "utils/Wave";
 
 const Hero = () => {
     return (
-        <section id={"home"} className="flex flex-col pt-20 bg-dark-bg text-light-text font-sans">
+        <section id={"home"} className="flex flex-col pt-10 bg-dark-bg text-light-text font-sans">
             {/* Illustration + Paragraph */}
             <div className="bg-dark-bg lg:min-h-[calc(100vh-300px)] w-full flex-grow-0 flex-shrink flex flex-no-wrap flex-col-reverse justify-center content-center px-2 lg:flex-row lg:justify-between lg:px-36">
                 {/* Paragraphs */}
-                <div className="flex flex-shrink flex-col text-center lg:text-left gap-4 justify-center content-center">
+                <div className="flex flex-shrink flex-col text-center lg:text-left justify-center content-center p-1">
                     <h1 className="hero-h1">
                         <span>Welcome to </span>
                         <span className="text-secondary">ENSIA Bib</span>
                     </h1>
                     <h2 className="hero-h2">
-                        <span className="text-violet">The library </span>
+                        <span className="text-violet">A library </span>
                         <span>that contains all of the </span>
                         <span className="text-secondary">studying resources </span>
                         <span>used in </span>
@@ -38,7 +38,7 @@ const Hero = () => {
                         <span>Providing </span>
                         <span className="text-violet">everyone </span>
                         <span>with </span>
-                        <span className="text-secondary block lg:inline">
+                        <span className="text-secondary">
                             <Typed
                                 strings={["Exams.", "Worksheets.", "Tests.", "Courses."]}
                                 typeSpeed={150}
@@ -50,15 +50,15 @@ const Hero = () => {
                 </div>
 
                 {/* Illustration */}
-                <div className="my-6 flex flex-col w-full lg:w-[450px] justify-center content-center">
+                <div className="my-1 flex flex-col w-full lg:w-[450px] justify-center content-center">
                     <img
                         width={512}
                         height={290}
-                        className="mx-auto w-96 lg:w-full"
+                        className="mx-auto w-80 lg:w-full"
                         alt="hero illustration"
                         src={HeroIllustration}
                     />
-                    <div className={"text-center text-2xl font-cursive my-3 p-3 lg:p-0"}>
+                    <div className={"text-center text-xl md:text-2xl font-cursive my-3 p-1 lg:p-0"}>
                         “{quotes[Math.floor(Math.random() * quotes.length)]}”
                     </div>
                 </div>
@@ -69,7 +69,7 @@ const Hero = () => {
                 <a className={"pt-6 px-1 lg:pt-10 lg:px-2"} href={"#main"}>
                     <FontAwesomeIcon
                         className={"text-3xl animate-bounce lg:text-5xl"}
-                        icon={faAnglesUp}
+                        icon={faAnglesDown}
                     />
                 </a>
             </div>
