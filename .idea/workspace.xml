@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="475514c4-872f-4531-a62f-ee7fa806c055" name="Changes" comment="Add rel=&quot;noreferrer&quot; to hyperlinks">
+    <list default="true" id="475514c4-872f-4531-a62f-ee7fa806c055" name="Changes" comment="Some overall UI improvements">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Aside/Aside.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Aside/Aside.index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Hero/Hero.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/Hero.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Hero/Hero.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/Hero.index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/Main.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Main.index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/Search/FilterBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Search/FilterBar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/Search/Search.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Search/Search.index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/SemesterCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/SemesterCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/TitleSubtitle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/TitleSubtitle.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavBar/NavBar.index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/NavBar.index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,14 +90,7 @@
       <workItem from="1662565242811" duration="917000" />
       <workItem from="1662576450455" duration="1271000" />
       <workItem from="1662578808660" duration="49000" />
-      <workItem from="1662633683434" duration="5305000" />
-    </task>
-    <task id="LOCAL-00003" summary="Hero component initial commit">
-      <created>1660599734447</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1660599734447</updated>
+      <workItem from="1662633683434" duration="7792000" />
     </task>
     <task id="LOCAL-00004" summary="Fixed Hero responsiveness on phone landscape orientation">
       <created>1660663659930</created>
@@ -445,7 +428,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662577743025</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Some overall UI improvements">
+      <created>1662649643225</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1662649643226</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -464,7 +454,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Add UI and basic functionality of Search" />
     <MESSAGE value="Add Search with keyword functionality" />
     <MESSAGE value="Convert @import to &lt;link&gt; for fonts" />
     <MESSAGE value="add lodash and configure css minifying" />
@@ -489,6 +478,7 @@
     <MESSAGE value="Fix filter tag appearing empty when it doesn't exist + Fix filter bar overflow" />
     <MESSAGE value="Update links and their targets" />
     <MESSAGE value="Add rel=&quot;noreferrer&quot; to hyperlinks" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add rel=&quot;noreferrer&quot; to hyperlinks" />
+    <MESSAGE value="Some overall UI improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some overall UI improvements" />
   </component>
 </project>

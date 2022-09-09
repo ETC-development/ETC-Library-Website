@@ -13,7 +13,7 @@ const Hero = () => {
             {/* Illustration + Paragraph */}
             <div className="bg-dark-bg lg:min-h-[calc(100vh-300px)] w-full flex-grow-0 flex-shrink flex flex-no-wrap flex-col-reverse justify-center content-center px-2 lg:flex-row lg:justify-between lg:px-36">
                 {/* Paragraphs */}
-                <div className="flex flex-shrink flex-col text-center lg:text-left justify-center content-center p-1">
+                <div className="flex flex-shrink flex-col text-center lg:text-left justify-center content-center p-1 md:p-0">
                     <h1 className="hero-h1">
                         <span>Welcome to </span>
                         <span className="text-secondary">ENSIA Bib</span>
