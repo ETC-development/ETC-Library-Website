@@ -1,4 +1,4 @@
-import { ReactComponent as Logo } from "../../assets/School Logo.svg";
+//import { ReactComponent as Logo } from "../../assets/School Logo.svg";
 import links from "./links";
 import "./NavBar.css";
 import Aside from "../Aside/Aside.index";
