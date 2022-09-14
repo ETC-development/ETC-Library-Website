@@ -27,6 +27,17 @@ const quotes: string[] = [
     "There are two kinds of people in this world: those who want to get things done and those who don’t want to make mistakes",
     "There are no limits!",
     "I’m not telling you it is going to be easy — I’m telling you it’s going to be worth it",
+    "You don't have to be great to start but you have to start to be great",
+    "No matter what you do, how many times you screw up, how many people tell you that you can't - keep going. Don't quit.",
+    "You are more than capable of getting all what you want in life",
+    "You either win or learn. Every situation has shaped you up to be the person that you are right now",
+    "No one has all the answers. You're going to spend a lot of time figuring things out.",
+    "Nothing is a waste of time if you learned something",
+    "Learn as if you will live forever, live like you will die tomorrow",
+    "Develop sucess from failures. Discouragement and failure are two of the surest stepping stones to success",
+    "The pessimist sees difficulty in every opportunity. The optimist sees opportunity in every difficulty.",
+    "Either you run the day or the day runs you.",
+    
 ];
 
 export default quotes;
