@@ -1,24 +1,36 @@
-//import { ReactComponent as Logo } from "../../assets/School Logo.svg";
+import Logo from "../../assets/logo2-sm.svg";
 import links from "./links";
 import "./NavBar.css";
 import Aside from "../Aside/Aside.index";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ReactComponent as Xmark } from "../../assets/close.svg";
 import { ReactComponent as HbMenu } from "../../assets/bars.svg";
 import { motion } from "framer-motion";
 
 export default function NavBar() {
     const [isOpen, setIsOpen] = useState(false);
+    const [isSmall, setIsSmall] = useState(false);
+
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            window.addEventListener("scroll", () => {
+                setIsSmall(window.scrollY > 200);
+            });
+        }
+    }, []);
 
     return (
         <nav className={"w-full fixed z-10 top-0"}>
             <motion.div className="bg-dark-bg flex justify-between items-center px-5 py-1 md:py-2.5 md:px-16 lg:px-36">
-                {/*<a className={"w-2"} href="https://ensia.edu.dz/">*/}
-                {/*    <Logo />*/}
-                {/*</a>*/}
-                <span className={"text-light-text font-semibold text-2xl"}>
-                    ENSIA <span className={"text-secondary"}>BIB</span>
-                </span>
+                <a
+                    className={`${isSmall ? "w-14 transition-all" : "w-14 md:w-20 transition-all"}`}
+                    href="https://ensia.edu.dz/"
+                >
+                    <img alt={"logo"} src={Logo} width={300} height={100} />
+                </a>
+                {/*<span className={"text-light-text font-semibold text-2xl"}>*/}
+                {/*    ENSIA <span className={"text-secondary"}>BIB</span>*/}
+                {/*</span>*/}
                 <button className="md:hidden p-2 w-12 z-10" onClick={() => setIsOpen(!isOpen)}>
                     {isOpen ? <Xmark /> : <HbMenu />}
                 </button>
