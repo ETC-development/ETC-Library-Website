@@ -1,4 +1,4 @@
-import Logo from "../../assets/logo2-sm.svg";
+import Logo from "../../assets/logo7-1.svg";
 import links from "./links";
 import "./NavBar.css";
 import Aside from "../Aside/Aside.index";
