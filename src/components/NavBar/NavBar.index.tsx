@@ -22,12 +22,11 @@ export default function NavBar() {
     return (
         <nav className={"w-full fixed z-10 top-0"}>
             <motion.div className="bg-dark-bg flex justify-between items-center px-5 py-1 md:py-2.5 md:px-16 lg:px-36">
-                <a
+                <div
                     className={`${isSmall ? "w-14 transition-all" : "w-14 md:w-20 transition-all"}`}
-                    href="https://ensia.edu.dz/"
                 >
                     <img alt={"logo"} src={Logo} width={300} height={100} />
-                </a>
+                </div>
                 {/*<span className={"text-light-text font-semibold text-2xl"}>*/}
                 {/*    ENSIA <span className={"text-secondary"}>BIB</span>*/}
                 {/*</span>*/}

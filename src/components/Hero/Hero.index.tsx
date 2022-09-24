@@ -16,14 +16,18 @@ const Hero = () => {
                 <div className="flex flex-shrink flex-col text-center lg:text-left justify-center content-center p-1 md:p-0">
                     <h1 className="hero-h1">
                         <span>Welcome to </span>
-                        <span className="text-secondary">ENSIA Bib</span>
+                        <span className="text-secondary">ENSIA Hub</span>
                     </h1>
                     <h2 className="hero-h2">
                         <span className="text-violet">A library </span>
                         <span>that contains all of the </span>
                         <span className="text-secondary">studying resources </span>
                         <span>used in </span>
-                        <span className="text-secondary">ENSIA</span>
+                        <span className="text-secondary underline">
+                            <a href={"https://ensia.edu.dz/"} target={"_blank"} rel={"noreferrer"}>
+                                ENSIA
+                            </a>
+                        </span>
                         <span>.</span>
                     </h2>
                     <h2 className="hero-h2">
