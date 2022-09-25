@@ -15,7 +15,8 @@ const getModulesFromLevel = (level?: string): FilterDropdownProps["selections"] 
         const index = +level - 1; //level can be: "1", "2" ... "5", so we subtract 1 to use it as index of array
         modulesArr[index].semesters.forEach((semester) => {
             semester.modules.forEach((module) => {
-                output.push({ label: module.name, value: module.dropdownValue });
+                if (module.name !== "TBA")
+                    output.push({ label: module.name, value: module.dropdownValue });
             });
         });
     } else {
@@ -23,7 +24,8 @@ const getModulesFromLevel = (level?: string): FilterDropdownProps["selections"] 
         modulesArr.forEach((year) => {
             year.semesters.forEach((semester) => {
                 semester.modules.forEach((module) => {
-                    output.push({ label: module.name, value: module.dropdownValue });
+                    if (module.name !== "TBA")
+                        output.push({ label: module.name, value: module.dropdownValue });
                 });
             });
         });
