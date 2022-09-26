@@ -96,9 +96,9 @@ const cardsInfo: Year[] = [
                         dropdownValue: "Architecture 1",
                     },
                     {
-                        name: "Data Structures",
+                        name: "Data Structures and Algorithms",
                         url: "https://drive.google.com/drive/folders/1D1RfgHDuVbhZiOXQKKpufO3uImSnBmpg",
-                        dropdownValue: "Data Structures",
+                        dropdownValue: "Data Structures and Algorithms",
                     },
                 ],
             },
