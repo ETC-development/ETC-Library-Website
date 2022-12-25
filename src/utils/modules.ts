@@ -100,30 +100,65 @@ const cardsInfo: Year[] = [
                         url: "https://drive.google.com/drive/folders/1D1RfgHDuVbhZiOXQKKpufO3uImSnBmpg",
                         dropdownValue: "Data Structures and Algorithms",
                     },
+                    {
+                        name: "Probabilities and Statistics 2",
+                        url: "https://drive.google.com/drive/folders/1XEdr1YAZMrTfiidRytMhGllibOQ_a-Sk",
+                        dropdownValue: "probabilities and statistics 2",
+                    },
+                    {
+                        name: "Complexity Theory",
+                        url: "https://drive.google.com/drive/folders/19MVB0YL1CCeLQ0CF8Lk0jepMPT4Equ7J",
+                        dropdownValue: "complexity theory",
+                    },
+                    {
+                        name: "Linear Algebra 2",
+                        url: "https://drive.google.com/drive/folders/1LGkUxV8yPT0ObsHXBAAySyrXofWFxEVB",
+                        dropdownValue: "linear algebra 2",
+                    },
+                    {
+                        name: "Databases",
+                        url: "https://drive.google.com/drive/folders/1wce39ylDlcI-DVqDaHGmOwb9qkQ37OqU",
+                        dropdownValue: "databases",
+                    },
                 ],
             },
             {
                 title: "Semester 2",
                 modules: [
                     {
-                        name: "TBA",
+                        name: "Introduction to AI",
                         url: "",
-                        dropdownValue: "Analysis 3s",
+                        dropdownValue: "introduction to ai",
                     },
                     {
-                        name: "TBA",
+                        name: "Operational Research",
                         url: "",
-                        dropdownValue: "d",
+                        dropdownValue: "operational research",
                     },
                     {
-                        name: "TBA",
+                        name: "Software Engineering",
                         url: "",
-                        dropdownValue: "Architecture 1s",
+                        dropdownValue: "software engineering",
                     },
                     {
-                        name: "TBA",
+                        name: "Web Programming",
                         url: "",
-                        dropdownValue: "es",
+                        dropdownValue: "web programming",
+                    },
+                    {
+                        name: "Computer Architecture 2",
+                        url: "",
+                        dropdownValue: "computer architecture 2",
+                    },
+                    {
+                        name: "Operating Systems",
+                        url: "",
+                        dropdownValue: "operating systems",
+                    },
+                    {
+                        name: "Introduction to Business",
+                        url: "",
+                        dropdownValue: "introduction to business",
                     },
                 ],
             },
