@@ -226,11 +226,11 @@ const Search = () => {
                         <br />
                         <span className={"lg:hidden block"}></span>
                         <span>by Selecting the needed </span>
-                        <span className={"text-secondary font-normal"}>File Categories</span>
+                        <b className={"text-secondary font-medium"}>File Categories</b>
                         <span>
                             , <br className={"sm:hidden"} /> or Writing
                         </span>
-                        <span className={"text-secondary font-normal"}> File Names </span>
+                        <b className={"text-secondary font-medium"}> File Names </b>
                         <span> in the search bar. </span>
                     </div>
                 }

@@ -1,4 +1,5 @@
-import HeroIllustration from "assets/hero.svg";
+// import HeroIllustration from "assets/hero.svg";
+import HeroIllustration from "assets/ETC Logo.webp";
 import Typed from "react-typed";
 import "./Hero.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
