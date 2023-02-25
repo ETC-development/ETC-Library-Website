@@ -12,8 +12,9 @@ module.exports = {
             "light-text": "#F6F9F6",
             "dark-text": "#0C1F47",
             secondary: "#FFC53A",
-            violet: "#B9FFB7",
+            violet: "#98D9C2",
             "dark-violet": "#ABEDC6",
+            "dark-violett": "#98D9C2",
             "grey-stroke": "#C2C2C2",
         },
         extend: {
