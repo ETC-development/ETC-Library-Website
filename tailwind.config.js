@@ -13,7 +13,7 @@ module.exports = {
             "dark-text": "#0C1F47",
             secondary: "#FFC53A",
             violet: "#98D9C2",
-            "dark-violet": "#ABEDC6",
+            "dark-violet": "#31bd6b",
             "dark-violett": "#98D9C2",
             "grey-stroke": "#C2C2C2",
         },
