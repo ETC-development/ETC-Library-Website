@@ -226,15 +226,27 @@ const Search = () => {
                         <br />
                         <span className={"lg:hidden block"}></span>
                         <span>by Selecting the needed </span>
-                        <span className={"text-secondary font-normal"}>File Categories</span>
+                        <b className={"text-secondary font-medium"}>File Categories</b>
                         <span>
                             , <br className={"sm:hidden"} /> or Writing
                         </span>
-                        <span className={"text-secondary font-normal"}> File Names </span>
+                        <b className={"text-secondary font-medium"}> File Names </b>
                         <span> in the search bar. </span>
                     </div>
                 }
             />
+
+            {/* <div
+                className={
+                    "w-full my-2 lg:w-200 max-w-full py-2 px-5 bg-secondary shadow-md rounded-xl text-dark-text"
+                }
+            >
+                <p className={"text-center font-semibold font-dark-bg"}>
+                    The files are temporarily not available for visitors outside of ENSIA, we are
+                    trying to fix the problem as soon as possible
+                </p>
+            </div>*/}
+
             <FilterBar
                 level={level}
                 module={module}

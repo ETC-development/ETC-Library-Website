@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="475514c4-872f-4531-a62f-ee7fa806c055" name="Changes" comment="Replace logo with placeholder + fix padding of hero paragraphs">
+    <list default="true" id="475514c4-872f-4531-a62f-ee7fa806c055" name="Changes" comment="Anniversary special design">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/computer.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/computer.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/math.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/math.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/problem.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/problem.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/quotes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/quotes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,7 +20,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="animations" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -28,34 +36,51 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/salah/programming/web/ETC-Library-Website&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/home/salah/programming/web/ETC-Library-Website/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/home/salah/programming/web/ETC-Library-Website/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/sal/git-clones/reward-system-discord-bot",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "prettierjs.PrettierConfiguration.Package": "/home/salah/programming/web/ETC-Library-Website/node_modules/prettier",
+    "settings.editor.selected.configurable": "preferences.editor",
+    "ts.external.directory.path": "/home/salah/programming/web/ETC-Library-Website/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/assets" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.start">
     <configuration type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -92,20 +117,10 @@
       <workItem from="1662578808660" duration="49000" />
       <workItem from="1662633683434" duration="7792000" />
       <workItem from="1662765322345" duration="921000" />
-    </task>
-    <task id="LOCAL-00005" summary="added build/ directory to gitignore">
-      <created>1660663682191</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1660663682191</updated>
-    </task>
-    <task id="LOCAL-00006" summary="added animated scroll icon and motivational quotes in Hero">
-      <created>1660673679254</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1660673679254</updated>
+      <workItem from="1673354210639" duration="35000" />
+      <workItem from="1676553751689" duration="47000" />
+      <workItem from="1677339446833" duration="1856000" />
+      <workItem from="1677341535921" duration="845000" />
     </task>
     <task id="LOCAL-00007" summary="Add cursive font and custom width">
       <created>1660673702807</created>
@@ -436,7 +451,21 @@
       <option name="project" value="LOCAL" />
       <updated>1662765631430</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Update modules to latest">
+      <created>1672000721110</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1672000721111</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Anniversary special design">
+      <created>1677340671483</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1677340671483</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -455,8 +484,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Convert @import to &lt;link&gt; for fonts" />
-    <MESSAGE value="add lodash and configure css minifying" />
     <MESSAGE value="Add animations and fix ResultsMenu re-rendering problem" />
     <MESSAGE value="Overall optimization and code formatting" />
     <MESSAGE value="Add loading and error UI functionality to the search" />
@@ -480,6 +507,8 @@
     <MESSAGE value="Add rel=&quot;noreferrer&quot; to hyperlinks" />
     <MESSAGE value="Some overall UI improvements" />
     <MESSAGE value="Replace logo with placeholder + fix padding of hero paragraphs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Replace logo with placeholder + fix padding of hero paragraphs" />
+    <MESSAGE value="Update modules to latest" />
+    <MESSAGE value="Anniversary special design" />
+    <option name="LAST_COMMIT_MESSAGE" value="Anniversary special design" />
   </component>
 </project>
