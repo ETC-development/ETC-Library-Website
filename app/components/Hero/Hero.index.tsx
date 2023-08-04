@@ -9,9 +9,11 @@ import Wave from "@/utils/Wave";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
+const quote = quotes[Math.floor(Math.random() * quotes.length)]
+
 const Hero = () => {
 
-    const [quote, setQuote] = useState("")
+    const [quotea, setQuote] = useState("")
 
 
     useEffect(()=>{
