@@ -67,11 +67,12 @@ const Footer = () => {
                         <Image
                             width={240}
                             height={240}
-                            src={"/ETC Logo.webp"}
+                            src={"/ETC-logo.webp"}
                             alt="ETC logo"
                             className="w-36 m-auto"
+                            unoptimized
                         />
-                        <div className="flex justify-center">
+                        <div className="flex justify-center pt-4">
                             <a
                                 className="social-icon"
                                 href="https://web.facebook.com/ensia.tech.community/"
