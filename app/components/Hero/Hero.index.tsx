@@ -1,24 +1,20 @@
-"use client"
+"use client";
 import Typed from "react-typed";
 import "./Hero.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesDown } from "@fortawesome/free-solid-svg-icons";
-
 import quotes from "@/utils/quotes";
 import Wave from "@/utils/Wave";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-
-const quote = quotes[Math.floor(Math.random() * quotes.length)]
+import ReactPlaceholder from "react-placeholder";
 
 const Hero = () => {
+    const [quote, setQuote] = useState("");
 
-    const [quotea, setQuote] = useState("")
-
-
-    useEffect(()=>{
-        setQuote(quotes[Math.floor(Math.random() * quotes.length)])
-    }, [])
+    useEffect(() => {
+        setQuote(quotes[Math.floor(Math.random() * quotes.length)]);
+    }, []);
 
     return (
         <section id={"home"} className="flex flex-col pt-10 bg-dark-bg text-light-text font-sans">
@@ -73,18 +69,28 @@ const Hero = () => {
                         className="mx-auto w-80 lg:w-full"
                         alt="hero illustration"
                         src={"/hero.svg"}
+                        priority
                     />
                     <div className={"text-center text-xl md:text-2xl font-cursive my-3 p-1 lg:p-0"}>
-                        “{quote}”
+                        <ReactPlaceholder
+                            type="text"
+                            showLoadingAnimation
+                            color="#9FADFD"
+                            className="h-10 opacity-60"
+                            ready={!!quote}
+                            rows={3}
+                        >
+                            "{quote}"
+                        </ReactPlaceholder>
                     </div>
                 </div>
             </div>
 
             {/* Icon */}
             <div className={"text-center text-secondary p-2 mt-10"}>
-                <a className={"pt-6 px-1 lg:pt-10 lg:px-2"} href={"#main"}>
+                <a className={"pt-6 px-1 lg:pt-10 w-full lg:px-2"} href={"#main"}>
                     <FontAwesomeIcon
-                        className={"text-3xl animate-bounce lg:text-5xl"}
+                        className={"text-3xl max-h-10 mx-auto max-w-10 animate-bounce lg:text-5xl"}
                         icon={faAnglesDown}
                     />
                 </a>
