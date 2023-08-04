@@ -127,37 +127,37 @@ const cardsInfo: Year[] = [
                 modules: [
                     {
                         name: "Introduction to AI",
-                        url: "",
+                        url: "https://drive.google.com/drive/folders/19HYOs5C7c1usd6YNAnLAbRCETodGNjHT",
                         dropdownValue: "introduction to ai",
                     },
                     {
-                        name: "Operational Research",
-                        url: "",
-                        dropdownValue: "operational research",
+                        name: "Operations Research",
+                        url: "https://drive.google.com/drive/folders/1yXEQNd3n7qBrsLdRclHwzSZIINQ507N8",
+                        dropdownValue: "operations research",
                     },
                     {
                         name: "Software Engineering",
-                        url: "",
+                        url: "https://drive.google.com/drive/folders/1TZcrqOSgpLxO2dbLmBE9OhFEQIrJkAgH",
                         dropdownValue: "software engineering",
                     },
                     {
                         name: "Web Programming",
-                        url: "",
+                        url: "https://drive.google.com/drive/folders/1n_S0ZjotjfmCLvmykjUUkWA6n4jiDcI2",
                         dropdownValue: "web programming",
                     },
                     {
                         name: "Computer Architecture 2",
-                        url: "",
+                        url: "https://drive.google.com/drive/folders/1VImJaXOeadLiyIrKFDjnmQaSePqXFW6t",
                         dropdownValue: "computer architecture 2",
                     },
                     {
                         name: "Operating Systems",
-                        url: "",
+                        url: "https://drive.google.com/drive/folders/1yXEQNd3n7qBrsLdRclHwzSZIINQ507N8",
                         dropdownValue: "operating systems",
                     },
                     {
                         name: "Introduction to Business",
-                        url: "",
+                        url: "https://drive.google.com/drive/folders/1OCSMwzvq3n4d_amDtZiws8MGY2B990hA",
                         dropdownValue: "introduction to business",
                     },
                 ],
