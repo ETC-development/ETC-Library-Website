@@ -1,7 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    mode: "jit",
-    content: ["./src/**/*.{js,jsx,ts,tsx}"],
+    mode: 'jit',
+    content: [
+        "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+        "./components/**/*.{js,ts,jsx,tsx,mdx}",
+        "./app/**/*.{js,ts,jsx,tsx,mdx}",
+        "./utils/**/*.{js,ts,jsx,tsx,mdx}",
+    ],
     theme: {
         colors: {
             transparent: "transparent",
