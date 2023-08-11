@@ -95,7 +95,7 @@ const Footer = () => {
                     </div>
 
                     <div className="font-light">
-                        <p className="text-grey-text">All Rights Reserved 2022</p>
+                        <p className="text-grey-text">All Rights Reserved {new Date().getFullYear()}</p>
                         <a href="https://www.gnu.org/licenses/gpl-3.0.txt">
                             <p className="text-grey-text">License Information</p>
                         </a>
