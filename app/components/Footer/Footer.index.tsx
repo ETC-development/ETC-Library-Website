@@ -64,15 +64,17 @@ const Footer = () => {
                             />
                             <span>by</span>
                         </h1>
-                        <Image
-                            width={240}
-                            height={240}
-                            src={"/ETC-logo.webp"}
-                            alt="ETC logo"
-                            className="w-36 m-auto"
-                            unoptimized
-                        />
-                        <div className="flex justify-center pt-4">
+                        <div className="p-6">
+                            <Image
+                                width={240}
+                                height={247}
+                                src={"/ETC-logo.webp"}
+                                alt="ETC logo"
+                                className="w-36 m-auto"
+                                unoptimized
+                                />
+                        </div>
+                        <div className="flex justify-center">
                             <a
                                 className="social-icon"
                                 href="https://web.facebook.com/ensia.tech.community/"
