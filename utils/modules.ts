@@ -173,17 +173,17 @@ const cardsInfo: Year[] = [
                 modules: [
                     {
                         name: "Data Mining",
-                        url: "https://drive.google.com/drive/u/1/folders/1cPWNd2ysTScwxt6TjvDS5VahGyfb9L9J",
+                        url: "https://drive.google.com/drive/u/1/folders/1ermEhuMFbDztXHQIEJGuSdcUUTA78IHy",
                         dropdownValue: "data mining",
                     },
                     {
                         name: "Operations Research",
-                        url: "https://drive.google.com/drive/u/1/folders/1KxGjUpL5PLD-4385B8ZjlB0wGgXHSeS8",
+                        url: "https://drive.google.com/drive/u/1/folders/1e-I0oO3PkGhJu0UhzyCUM-oOMI5xnvoK",
                         dropdownValue: "operations research",
                     },
                     {
                         name: "Stochastic Modelling and Simulation",
-                        url: "https://drive.google.com/drive/u/1/folders/1kVpdZaSUfhW7p-L7bO8BScoFzTJFalkv",
+                        url: "https://drive.google.com/drive/u/1/folders/1c_1xJsJOrB_5HBxyRFcyYn60-RUjaO4V",
                         dropdownValue: "stochastic modelling and simulation",
                     },
                     {
@@ -193,17 +193,17 @@ const cardsInfo: Year[] = [
                     },
                     {
                         name: "Networks and Protocols",
-                        url: "https://drive.google.com/drive/u/1/folders/1GMXJViJH3ZNyjbzqHGz0gjn4GzsunvDr",
+                        url: "https://drive.google.com/drive/u/1/folders/1teZ9f0fn3YYxwRjciTKGjkb1uJHD7DDJ",
                         dropdownValue: "networks and protocols",
                     },
                     {
                         name: "Mobile Development",
-                        url: "https://drive.google.com/drive/u/1/folders/1wOatv3jIhGi13r277vfH0OBOiW5bIT1Q",
+                        url: "https://drive.google.com/drive/u/1/folders/1F-qWt8tL-LEOoh6w5lgd80ZYXpy4Og7G",
                         dropdownValue: "mobile development",
                     },
                     {
                         name: "Entrepreneurship and Innovation",
-                        url: "https://drive.google.com/drive/u/1/folders/1MeQjF3tRmIlGL_NogAjpd9X93XfadJD3",
+                        url: "https://drive.google.com/drive/u/1/folders/1rljxX73AZ1b6ghI5CFP5FrFUUKVFDwXE",
                         dropdownValue: "entrepreneurship and innovation",
                     },
                 ],
@@ -213,37 +213,37 @@ const cardsInfo: Year[] = [
                 modules: [
                     {
                         name: "Machine Learning",
-                        url: "https://drive.google.com/drive/u/1/folders/1Ni7YgRGyzScJAD8XOduJ1Ce3Ju3Hd1lE",
+                        url: "https://drive.google.com/drive/u/1/folders/1XM3jFU__zBs26AImWX6Udm4xwwyEHcMJ",
                         dropdownValue: "machine learning",
                     },
                     {
                         name: "Numerical Methods and Optimisation",
-                        url: "https://drive.google.com/drive/u/1/folders/1Dyq3kjkN0Jm3V4uhrOn1PxnC0Pr9AVRH",
+                        url: "https://drive.google.com/drive/u/1/folders/1kpspdxksivepW4GWFBbegmBKUMh4DXWQ",
                         dropdownValue: "numerical methods and optimisation",
                     },
                     {
                         name: "Time Series Analysis and Classification",
-                        url: "https://drive.google.com/drive/u/1/folders/1Eb8zwZU_xJMc8kgKTHcObcJAsBng3vkb",
+                        url: "https://drive.google.com/drive/u/1/folders/1PiIlvGdFRjFjTMUkDm7QmVs_1xVgf8JS",
                         dropdownValue: "time series analysis and classification",
                     },
                     {
                         name: "Advanced Databases",
-                        url: "https://drive.google.com/drive/u/1/folders/1_Ej9HJ19YgTuVY_nJRf23rrTnMOJ_UYE",
+                        url: "https://drive.google.com/drive/u/1/folders/1mogTbf_uGE3nNMlbVrXxrYHDLx97UQJg",
                         dropdownValue: "advanced databases",
                     },
                     {
                         name: "Computer and network Security",
-                        url: "https://drive.google.com/drive/u/1/folders/1oWaAl618wsRkd9C5Hh0EvKSuFQmkJTdu",
+                        url: "https://drive.google.com/drive/u/1/folders/1pwnhcvR2tAPiPERM_jMAxUFGwbvzx8bk",
                         dropdownValue: "computer and network security",
                     },
                     {
                         name: "Group Project",
-                        url: "https://drive.google.com/drive/u/1/folders/1oHnYfNjlqZE7gQ4rMNsia_2ixCgACHX2",
+                        url: "https://drive.google.com/drive/u/1/folders/1Imz3xyE6kbg3XoU7fRmacnyr-3Rs1LW4",
                         dropdownValue: "group project",
                     },
                     {
                         name: "Project Management",
-                        url: "https://drive.google.com/drive/u/1/folders/1qMRK5jClp68tDbsyTz8p1uUTq2Qla78c",
+                        url: "https://drive.google.com/drive/u/1/folders/1LR3N8VTF0RQGtgsl2Pa0UqeSBP6G6fL9",
                         dropdownValue: "project management",
                     },
                 ],
