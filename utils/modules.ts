@@ -164,6 +164,92 @@ const cardsInfo: Year[] = [
             },
         ],
     },
+    {
+        title: "First Superior Cycle",
+        dropDownValue: "3",
+        semesters: [
+            {
+                title: "Semester 1",
+                modules: [
+                    {
+                        name: "Data Mining",
+                        url: "https://drive.google.com/drive/u/1/folders/1cPWNd2ysTScwxt6TjvDS5VahGyfb9L9J",
+                        dropdownValue: "data mining",
+                    },
+                    {
+                        name: "Operations Research",
+                        url: "https://drive.google.com/drive/u/1/folders/1KxGjUpL5PLD-4385B8ZjlB0wGgXHSeS8",
+                        dropdownValue: "operations research",
+                    },
+                    {
+                        name: "Stochastic Modelling and Simulation",
+                        url: "https://drive.google.com/drive/u/1/folders/1kVpdZaSUfhW7p-L7bO8BScoFzTJFalkv",
+                        dropdownValue: "stochastic modelling and simulation",
+                    },
+                    {
+                        name: "Software Engineering",
+                        url: "",
+                        dropdownValue: "software engineering",
+                    },
+                    {
+                        name: "Networks and Protocols",
+                        url: "https://drive.google.com/drive/u/1/folders/1GMXJViJH3ZNyjbzqHGz0gjn4GzsunvDr",
+                        dropdownValue: "networks and protocols",
+                    },
+                    {
+                        name: "Mobile Development",
+                        url: "https://drive.google.com/drive/u/1/folders/1wOatv3jIhGi13r277vfH0OBOiW5bIT1Q",
+                        dropdownValue: "mobile development",
+                    },
+                    {
+                        name: "Entrepreneurship and Innovation",
+                        url: "https://drive.google.com/drive/u/1/folders/1MeQjF3tRmIlGL_NogAjpd9X93XfadJD3",
+                        dropdownValue: "entrepreneurship and innovation",
+                    },
+                ],
+            },
+            {
+                title: "Semester 2",
+                modules: [
+                    {
+                        name: "Machine Learning",
+                        url: "https://drive.google.com/drive/u/1/folders/1Ni7YgRGyzScJAD8XOduJ1Ce3Ju3Hd1lE",
+                        dropdownValue: "machine learning",
+                    },
+                    {
+                        name: "Numerical Methods and Optimisation",
+                        url: "https://drive.google.com/drive/u/1/folders/1Dyq3kjkN0Jm3V4uhrOn1PxnC0Pr9AVRH",
+                        dropdownValue: "numerical methods and optimisation",
+                    },
+                    {
+                        name: "Time Series Analysis and Classification",
+                        url: "https://drive.google.com/drive/u/1/folders/1Eb8zwZU_xJMc8kgKTHcObcJAsBng3vkb",
+                        dropdownValue: "time series analysis and classification",
+                    },
+                    {
+                        name: "Advanced Databases",
+                        url: "https://drive.google.com/drive/u/1/folders/1_Ej9HJ19YgTuVY_nJRf23rrTnMOJ_UYE",
+                        dropdownValue: "advanced databases",
+                    },
+                    {
+                        name: "Computer and network Security",
+                        url: "https://drive.google.com/drive/u/1/folders/1oWaAl618wsRkd9C5Hh0EvKSuFQmkJTdu",
+                        dropdownValue: "computer and network security",
+                    },
+                    {
+                        name: "Group Project",
+                        url: "https://drive.google.com/drive/u/1/folders/1oHnYfNjlqZE7gQ4rMNsia_2ixCgACHX2",
+                        dropdownValue: "group project",
+                    },
+                    {
+                        name: "Project Management",
+                        url: "https://drive.google.com/drive/u/1/folders/1qMRK5jClp68tDbsyTz8p1uUTq2Qla78c",
+                        dropdownValue: "project management",
+                    },
+                ],
+            },
+        ],
+    },
 ];
 
 export default cardsInfo;

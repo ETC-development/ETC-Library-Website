@@ -20,6 +20,11 @@ let links = [
         link: "#2",
     },
     {
+        label: "PC3",
+        full: "First Superior Cycle",
+        link: "#3",
+    },
+    {
         label: "Contribute",
         full: "Contribute",
         link: "#contribute",
