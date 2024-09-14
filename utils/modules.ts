@@ -10,9 +10,24 @@ const cardsInfo: Year[] = [
                 title: "Semester 1",
                 modules: [
                     {
-                        name: "Intensive English",
-                        url: "https://drive.google.com/drive/folders/1Y_EEJ2lnRCin5OatOnB8mlVJm-9jCP2t",
-                        dropdownValue: "intensive english",
+                        name: "Foundational Math",
+                        url: "https://drive.google.com/drive/u/1/folders/1WuUC8Hst0znW2rpqujNopvLVdnhDV0TO",
+                        dropdownValue: "foundational math",
+                    },
+                    {
+                        name: "Data Structures and Algorithms",
+                        url: "https://drive.google.com/drive/u/1/folders/18yxudJoexOK713kW-N35L7S4WiEDQW-5",
+                        dropdownValue: "data structures and algorithms",
+                    },
+                    {
+                        name: "Digital Systems",
+                        url: "https://drive.google.com/drive/u/1/folders/1FUr0NCCCr5LG3Y4EddYYM0T_jbUcX6WW",
+                        dropdownValue: "digital systems",
+                    },
+                    {
+                        name: "Information Technology Essentials",
+                        url: "https://drive.google.com/drive/u/1/folders/17rIgnlM3VcwovIhuH0ipUKUwnT14CbLn",
+                        dropdownValue: "information technology essentials",
                     },
                     {
                         name: "Critical Thinking and Creative Problem Solving (CPSCT)",
@@ -20,19 +35,14 @@ const cardsInfo: Year[] = [
                         dropdownValue: "cpsct",
                     },
                     {
-                        name: "Analysis 1",
-                        url: "https://drive.google.com/drive/folders/1-TeEhipTbrxluAWTl0U7MUOkwwU2DKkL",
-                        dropdownValue: "analysis 1",
-                    },
-                    {
-                        name: "Algebra 1",
-                        url: "https://drive.google.com/drive/folders/13nmhlagnKpsDcByZTyBCWwnhMuG3mSFz",
-                        dropdownValue: "algebra 1",
-                    },
-                    {
                         name: "Academic Communication 1",
                         url: "https://drive.google.com/drive/folders/103faquNvgVFLOm5G8xvnHNnEQM6vBm_H",
                         dropdownValue: "academic communication 1",
+                    },
+                    {
+                        name: "Intensive English",
+                        url: "https://drive.google.com/drive/folders/1Y_EEJ2lnRCin5OatOnB8mlVJm-9jCP2t",
+                        dropdownValue: "intensive english",
                     },
                 ],
             },
@@ -53,6 +63,11 @@ const cardsInfo: Year[] = [
                         name: "Academic Communication 2",
                         url: "https://drive.google.com/drive/folders/1SOF3onNXyaD01wrdyXaRpea9Zb4OKTQ_",
                         dropdownValue: "academic communication 2",
+                    },
+                    {
+                        name: "Introduction to Linux",
+                        url: "https://drive.google.com/drive/u/1/folders/1QkDP_9KmMhDKqUY-MmegBJw697DlJbRY",
+                        dropdownValue: "introduction to linux",
                     },
                     {
                         name: "Linear Algebra",
