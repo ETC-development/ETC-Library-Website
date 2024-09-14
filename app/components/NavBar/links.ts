@@ -20,7 +20,7 @@ let links = [
         link: "#2",
     },
     {
-        label: "SC3",
+        label: "SC1",
         full: "First Superior Cycle",
         link: "#3",
     },
