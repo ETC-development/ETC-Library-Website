@@ -55,11 +55,6 @@ const cardsInfo: Year[] = [
                         dropdownValue: "analysis 2",
                     },
                     {
-                        name: "Introduction to Programming in C++",
-                        url: "https://drive.google.com/drive/folders/1GtwSUEvdGVm8PhyvggSAnlC-0WoGzxPX",
-                        dropdownValue: "introduction to programming in C++",
-                    },
-                    {
                         name: "Academic Communication 2",
                         url: "https://drive.google.com/drive/folders/1SOF3onNXyaD01wrdyXaRpea9Zb4OKTQ_",
                         dropdownValue: "academic communication 2",
