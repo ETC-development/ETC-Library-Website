@@ -12,7 +12,7 @@ const cardsInfo: Year[] = [
                     {
                         name: "Foundational Mathematics",
                         url: "https://drive.google.com/drive/u/1/folders/1WuUC8Hst0znW2rpqujNopvLVdnhDV0TO",
-                        dropdownValue: "foundational math",
+                        dropdownValue: "foundational mathematics",
                     },
                     {
                         name: "Data Structures And Algorithms",
