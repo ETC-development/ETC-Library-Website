@@ -51,7 +51,7 @@ const Footer = () => {
                         illustration={"/math.svg"}
                         buttonIcon={faFileLines}
                         buttonText={"Submit a Document"}
-                        link={"https://forms.gle/g3TQuw6W1vYf3fjz8"}
+                        link={"https://forms.gle/wRAToS93zneKiW5a6"}
                     />
                 </div>
                 <div>
@@ -72,7 +72,7 @@ const Footer = () => {
                                 alt="ETC logo"
                                 className="w-36 m-auto"
                                 unoptimized
-                                />
+                            />
                         </div>
                         <div className="flex justify-center">
                             <a
@@ -97,7 +97,9 @@ const Footer = () => {
                     </div>
 
                     <div className="font-light">
-                        <p className="text-grey-text">All Rights Reserved {new Date().getFullYear()}</p>
+                        <p className="text-grey-text">
+                            All Rights Reserved {new Date().getFullYear()}
+                        </p>
                         <a href="https://www.gnu.org/licenses/gpl-3.0.txt">
                             <p className="text-grey-text">License Information</p>
                         </a>
