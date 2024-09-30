@@ -10,12 +10,12 @@ const cardsInfo: Year[] = [
                 title: "Semester 1",
                 modules: [
                     {
-                        name: "Foundational Math",
+                        name: "Foundational Mathematics",
                         url: "https://drive.google.com/drive/u/1/folders/1WuUC8Hst0znW2rpqujNopvLVdnhDV0TO",
                         dropdownValue: "foundational math",
                     },
                     {
-                        name: "Data Structures and Algorithms",
+                        name: "Data Structures And Algorithms",
                         url: "https://drive.google.com/drive/u/1/folders/18yxudJoexOK713kW-N35L7S4WiEDQW-5",
                         dropdownValue: "data structures and algorithms",
                     },
@@ -35,30 +35,15 @@ const cardsInfo: Year[] = [
                         dropdownValue: "cpsct",
                     },
                     {
-                        name: "Academic Communication 1",
-                        url: "https://drive.google.com/drive/folders/103faquNvgVFLOm5G8xvnHNnEQM6vBm_H",
-                        dropdownValue: "academic communication 1",
-                    },
-                    {
-                        name: "Intensive English",
-                        url: "https://drive.google.com/drive/folders/1Y_EEJ2lnRCin5OatOnB8mlVJm-9jCP2t",
-                        dropdownValue: "intensive english",
+                        name: "English 1",
+                        url: "https://drive.google.com/drive/folders/1F9rep07kx5MrC3LT6y5lf-mE3og60TMI",
+                        dropdownValue: "english 1",
                     },
                 ],
             },
             {
                 title: "Semester 2",
                 modules: [
-                    {
-                        name: "Analysis 2",
-                        url: "https://drive.google.com/drive/folders/1SzogkDnnH6FlLGzY41c_B6B8juDAwrxb",
-                        dropdownValue: "analysis 2",
-                    },
-                    {
-                        name: "Academic Communication 2",
-                        url: "https://drive.google.com/drive/folders/1SOF3onNXyaD01wrdyXaRpea9Zb4OKTQ_",
-                        dropdownValue: "academic communication 2",
-                    },
                     {
                         name: "Introduction to Linux",
                         url: "https://drive.google.com/drive/u/1/folders/1QkDP_9KmMhDKqUY-MmegBJw697DlJbRY",
@@ -70,14 +55,24 @@ const cardsInfo: Year[] = [
                         dropdownValue: "linear algebra",
                     },
                     {
-                        name: "Probabilities and Statistics",
+                        name: "Introduction to Statistics",
                         url: "https://drive.google.com/drive/folders/1rF_naxPrDvxN0W0yyH7QYvWLFTLil3Zm",
-                        dropdownValue: "probabilities and statistics",
+                        dropdownValue: "introduction to statistics",
                     },
                     {
                         name: "Object Oriented Programming",
                         url: "https://drive.google.com/drive/folders/1tjeHDwav6Ltfbx0xb6O-79au1TUruX2F",
                         dropdownValue: "Object Oriented Programming",
+                    },
+                    {
+                        name: "English 2",
+                        url: "https://drive.google.com/drive/folders/1ejqKTcwkUQgRt7R_Ygbi7HOCThhotz8a?usp=drive_link",
+                        dropdownValue: "english 2",
+                    },
+                    {
+                        name: "Mathematical Analysis 1",
+                        url: "https://drive.google.com/drive/folders/13TgNKEA2r0EkGLu9zMU-PGi3VvPn6hn7?usp=drive_link",
+                        dropdownValue: "mathematical analysis 1",
                     },
                 ],
             },
@@ -91,9 +86,9 @@ const cardsInfo: Year[] = [
                 title: "Semester 1",
                 modules: [
                     {
-                        name: "Analysis 3",
+                        name: "Mathematical Analysis 2",
                         url: "https://drive.google.com/drive/folders/1SJDDOcESHkZOff3A2Ff2hA1oGU1JdZ_n",
-                        dropdownValue: "Analysis 3",
+                        dropdownValue: "mathematical analysis 2",
                     },
                     {
                         name: "Mathematical Logic",
@@ -101,34 +96,29 @@ const cardsInfo: Year[] = [
                         dropdownValue: "Mathematical Logic",
                     },
                     {
-                        name: "Architecture 1",
-                        url: "https://drive.google.com/drive/folders/1jbl5pNgGoF-GvnLp33TKGA8AYySu-ikB",
-                        dropdownValue: "Architecture 1",
-                    },
-                    {
-                        name: "Data Structures and Algorithms",
+                        name: "Data Structures and Algorithms 2",
                         url: "https://drive.google.com/drive/folders/1D1RfgHDuVbhZiOXQKKpufO3uImSnBmpg",
-                        dropdownValue: "Data Structures and Algorithms",
+                        dropdownValue: "data structures and algorithms 2",
                     },
                     {
-                        name: "Probabilities and Statistics 2",
+                        name: "Probability",
                         url: "https://drive.google.com/drive/folders/1XEdr1YAZMrTfiidRytMhGllibOQ_a-Sk",
-                        dropdownValue: "probabilities and statistics 2",
+                        dropdownValue: "probability",
                     },
                     {
-                        name: "Complexity Theory",
-                        url: "https://drive.google.com/drive/folders/19MVB0YL1CCeLQ0CF8Lk0jepMPT4Equ7J",
-                        dropdownValue: "complexity theory",
-                    },
-                    {
-                        name: "Linear Algebra 2",
-                        url: "https://drive.google.com/drive/folders/1LGkUxV8yPT0ObsHXBAAySyrXofWFxEVB",
-                        dropdownValue: "linear algebra 2",
+                        name: "Web Development",
+                        url: "https://drive.google.com/drive/folders/1n_S0ZjotjfmCLvmykjUUkWA6n4jiDcI2",
+                        dropdownValue: "web development",
                     },
                     {
                         name: "Databases",
                         url: "https://drive.google.com/drive/folders/1wce39ylDlcI-DVqDaHGmOwb9qkQ37OqU",
                         dropdownValue: "databases",
+                    },
+                    {
+                        name: "Introduction to Business",
+                        url: "https://drive.google.com/drive/folders/1OCSMwzvq3n4d_amDtZiws8MGY2B990hA",
+                        dropdownValue: "introduction to business",
                     },
                 ],
             },
@@ -141,24 +131,14 @@ const cardsInfo: Year[] = [
                         dropdownValue: "introduction to ai",
                     },
                     {
-                        name: "Operations Research",
-                        url: "https://drive.google.com/drive/folders/1yXEQNd3n7qBrsLdRclHwzSZIINQ507N8",
-                        dropdownValue: "operations research",
+                        name: "Computer Architecture",
+                        url: "https://drive.google.com/drive/folders/1VImJaXOeadLiyIrKFDjnmQaSePqXFW6t?usp=drive_link",
+                        dropdownValue: "computer architecture",
                     },
                     {
-                        name: "Software Engineering",
-                        url: "https://drive.google.com/drive/folders/1TZcrqOSgpLxO2dbLmBE9OhFEQIrJkAgH",
-                        dropdownValue: "software engineering",
-                    },
-                    {
-                        name: "Web Programming",
-                        url: "https://drive.google.com/drive/folders/1n_S0ZjotjfmCLvmykjUUkWA6n4jiDcI2",
-                        dropdownValue: "web programming",
-                    },
-                    {
-                        name: "Computer Architecture 2",
-                        url: "https://drive.google.com/drive/folders/1VImJaXOeadLiyIrKFDjnmQaSePqXFW6t",
-                        dropdownValue: "computer architecture 2",
+                        name: "Theory of Computing",
+                        url: "https://drive.google.com/drive/folders/19MVB0YL1CCeLQ0CF8Lk0jepMPT4Equ7J",
+                        dropdownValue: "theory of computing",
                     },
                     {
                         name: "Operating Systems",
@@ -166,9 +146,19 @@ const cardsInfo: Year[] = [
                         dropdownValue: "operating systems",
                     },
                     {
-                        name: "Introduction to Business",
-                        url: "https://drive.google.com/drive/folders/1OCSMwzvq3n4d_amDtZiws8MGY2B990hA",
-                        dropdownValue: "introduction to business",
+                        name: "Electronic Circuits Labs",
+                        url: "https://drive.google.com/drive/folders/1lO4LbejbO5UrTay15EzmT03KgVx_T_eT?usp=drive_link",
+                        dropdownValue: "electronic circuits labs",
+                    },
+                    {
+                        name: "Mathematical Analysis 3",
+                        url: "https://drive.google.com/drive/folders/1icFTEa2aS05o83bB9uMVGWjZnRVGw0E9?usp=drive_link",
+                        dropdownValue: "mathematical analysis 3",
+                    },
+                    {
+                        name: "Statistical Inference",
+                        url: "https://drive.google.com/drive/folders/1X-FMjRp5_kAxTs28wBOpIPRjehYWcNZR?usp=drive_link",
+                        dropdownValue: "statistical inference",
                     },
                 ],
             },
@@ -188,7 +178,7 @@ const cardsInfo: Year[] = [
                     },
                     {
                         name: "Operations Research",
-                        url: "https://drive.google.com/drive/u/1/folders/1e-I0oO3PkGhJu0UhzyCUM-oOMI5xnvoK",
+                        url: "https://drive.google.com/drive/folders/1F0D3RhUE4kGXl1_QjhnJHu-CI2FlU_MD?usp=drive_link",
                         dropdownValue: "operations research",
                     },
                     {
@@ -198,7 +188,7 @@ const cardsInfo: Year[] = [
                     },
                     {
                         name: "Software Engineering",
-                        url: "",
+                        url: "https://drive.google.com/drive/folders/1TZcrqOSgpLxO2dbLmBE9OhFEQIrJkAgH?usp=drive_link",
                         dropdownValue: "software engineering",
                     },
                     {
